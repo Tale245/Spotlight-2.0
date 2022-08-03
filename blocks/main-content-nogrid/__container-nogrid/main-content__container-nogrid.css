@@ -1,0 +1,29 @@
+.main-content__container-nogrid{
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  max-height: 25%;
+}
+@media screen and (max-width: 1300px)  {
+  .main-content__container-nogrid{
+    margin-bottom: 40px;
+    max-width: 45%;
+    max-height: 45%;
+  }
+}
+@media screen and (max-width: 650px)  {
+  .main-content__container-nogrid{
+    margin-bottom: 40px;
+    max-width: 70%;
+    max-height: 70%;
+  }
+}
+@media screen and (max-width: 500px)  {
+  .main-content__container-nogrid{
+    margin-bottom: 40px;
+    max-width: 80%;
+    max-height: 80%;
+  }
+}

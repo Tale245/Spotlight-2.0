@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои работы</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <a href="index.html"><img src="././images/SPOTLIGHT.svg" class="header__logo"></a>
+    <form class="header__form">
+      <input class="header__input" placeholder="Введите имя">
+    </form>
+    <div class="header__container">
+      <div class="header__container-link">
+        <a href="#" class="header__link header__link-first">Вход</a>
+        <a href='#' class="header__link">Профиль</a>
+      </div>
+      <div class="header__container-link">
+        <a href='#' class="header__link">Навигация</a>
+        <a href='#' class="header__link">Настройки</a>
+      </div>
+    </div>
+  </header>
+  <section class="profile">
+    <div class="profile__container">
+      <div class="profile__card-container">
+        <p class="profile__paragraph">Профессия: <span class="profile__span">Фотограф</span></p>
+        <img class="profile__img"
+          src="https://images.unsplash.com/photo-1659456145065-c446b8bfc606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+        <a href="#" class="profile__paragraph link">VK<span class="profile__span"></span></a>
+      </div>
+      <div class="profile__card-container">
+        <p class="profile__name">Emilia</p>
+        <img class="profile__img profile__img-name"
+          src="https://images.unsplash.com/photo-1659456168565-505ec9afa33d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80">
+        <a href="#" class="profile__paragraph link">YOUTUBE<span class="profile__span"></span></a>
+      </div>
+      <div class="profile__card-container">
+        <p class="profile__paragraph">Опыт работы: <span class="profile__span">5</span></p>
+        <img class="profile__img"
+          src="https://images.unsplash.com/photo-1659456059810-7d34ad64236a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+        <a href="#" class="profile__paragraph link">Telegram<span class="profile__span"></span></a>
+      </div>
+    </div>
+    <div class="profile__text-container">
+      <p class="profile__text"><span class='profile__text_span'>О себе: </span>Привет, меня зовут Эмилия! Я – Фотограф! Надеюсь вам понравятся мои работы!
+        Что бы еще вам рассказать?) Иногда люблю снимать видео, общительная, экстраверт. Если вас заинтересуют мои работы, обращайтесь в личные сообщения! Выше указаны мои контакты. </p>
+    </div>
+  </section>
+  <section class="title-menu">
+    <button class="title-menu__button-add title-menu__button button"></button>
+    <div class="title-menu__container">
+      <button class="title-menu__button-video title-menu__button button"></button>
+      <div class="title-menu__title_container">
+        <h1 class="title-menu__title">Мои работы</h1>
+        <p class="title-menu__subtitle">Ниже вы можете ознакомиться с моими работами</p>
+      </div>
+      <button class="title-menu__button-photo title-menu__button button"></button>
+    </div>
+    <button class="title-menu__button-q title-menu__button button"></button>
+  </section>
+
+  <section class="buttons">
+    <div class="buttons__container">
+      <button class="buttons__item buttons__item-grid button"></button>
+      <button class="buttons__item buttons__item-nogrid button"></button>
+    </div>
+  </section>
+
+  <section class="main-content-grid" id="main-content__container">
+    <!-- <div class="main-content__container-grid" id="main-container">
+      <img class="main-content__image-grid" src="https://images.unsplash.com/photo-1536896407451-6e3dd976edd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt='image'>
+      <div class="main-content__text-container display_none">
+        <p class="main-content__text main-content__text_model">На фото: <span class="main-content__text-span">Я</span></p>
+        <p class="main-content__text main-content__text_device">Оборудование: <span class="main-content__text-span">CANON 900D</span></p>
+        <p class="main-content__text main-content__text_description">Описание: <span class="main-content__text-span">AYOOO</span></p>
+      </div>
+    </div> -->
+  </section>
+  <div class="popup popup_add-item">
+    <div class="popup__overlay"></div>
+    <div class="popup__container">
+      <h2 class="popup__title">ADD PHOTO</h2>
+      <form class="popup__form popup__form_add-Image">
+        <input type="url" class="popup__input input-link" placeholder="Ссылка на фотографию" required>
+        <input type="text" class="popup__input input-model" placeholder="Кто или что на фотографии?" maxlength="20"
+          required>
+        <input type="text" class="popup__input input-device" placeholder="На что снято?" maxlength="20" required>
+        <input type="text" class="popup__input input-description" placeholder="Описание фото <= 50" required
+          maxlength="50">
+        <button type="submit" class="popup__submit-button"><span class="popup__button-span">Добавить</span> </button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_open-image">
+    <div class="popup__overlay popup__overlay_img"></div>
+    <div class="popup__container_image">
+      <img
+        src="https://images.unsplash.com/photo-1536896407451-6e3dd976edd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        class="popup__image-scale">
+      <div class="container-text">
+        <div class="popup__container-text">
+          <p class="popup__image-text popup__image-text __text_model">На фото: <span
+              class="popup__image-text__text-span image-model"></span></p>
+          <p class="popup__image-text popup__image-text __text_device">Оборудование: <span
+              class="popup__image-text__text-span image-device"></span></p>
+          <p class="popup__image-text popup__image-text __text_description">Описание: <span
+              class="popup__image-text__text-span image-description"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <template id="template">
+    <div class="main-content__container-grid">
+      <img class="main-content__image-grid" alt='image'>
+      <div class="main-content__text-container display_none">
+        <p class="main-content__text main-content__text_model">На фото: <span
+            class="main-content__text-span span-model"></span></p>
+        <p class="main-content__text main-content__text_device">Оборудование: <span
+            class="main-content__text-span span-device"></span></p>
+        <p class="main-content__text main-content__text_description">Описание: <span
+            class="main-content__text-span span-description"></span></p>
+      </div>
+    </div>
+  </template>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

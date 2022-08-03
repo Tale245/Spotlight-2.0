@@ -1,0 +1,6 @@
+.link{
+  transition: color 200ms ease-in-out;
+}
+.link:hover{
+  color: rgb(163, 163, 163);
+}

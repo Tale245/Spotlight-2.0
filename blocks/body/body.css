@@ -1,0 +1,18 @@
+.body{
+  margin: 0;
+  background-color:rgba(17, 17, 17, 1);
+  background-image: url(../../images/NG-G_back.svg);
+  background-size: contain;
+  background-position: 0px -20vh;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(7, 7, 7);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 194, 255, 1);
+  border-radius: 10px;
+  border: none;
+}

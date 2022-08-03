@@ -1,0 +1,179 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/Inter/inter.css);
+/* CSS FOR BODY */
+@import url(../blocks/body/body.css);
+/* CSS FOR HEADER */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__container-link/header__container-link.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__logo/header__logo.css);
+/* CSS FOR PROFILE */
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__container/profile__container.css);
+@import url(../blocks/profile/__card-container/profile__card-container.css);
+@import url(../blocks/profile/__paragraph/profile__paragraph.css);
+@import url(../blocks/profile/__span/profile__span.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__img/profile__img.css);
+@import url(../blocks/profile/__img-name/profile__img-name.css);
+/* ОБЩИЙ CSS ДЛЯ ВСЕХ КНОПОК */
+@import url(../blocks/button/button.css);
+/* ОБЩИЙ CSS ДЛЯ ВСЕХ ССЫЛОК */
+@import url(../blocks/link/link.css);
+/* CSS FOR TITLE-MENU */
+@import url(../blocks/title-menu/title-menu.css);
+@import url(../blocks/title-menu/title-menu.css);
+@import url(../blocks/title-menu/__button/title-menu__button.css);
+@import url(../blocks/title-menu/__button-add/title-menu__button-add.css);
+@import url(../blocks/title-menu/__button-video/title-menu__button-video.css);
+@import url(../blocks/title-menu/__button-photo/title-menu__button-photo.css);
+@import url(../blocks/title-menu/__button-q/title-menu__button-q.css);
+@import url(../blocks/title-menu/__container/title-menu__container.css);
+@import url(../blocks/title-menu/__title/title-menu__title.css);
+@import url(../blocks/title-menu/__subtitle/title-menu__subtitle.css);
+/* CSS FOR BUTTONS */
+@import url(../blocks/buttons/buttons.css);
+@import url(../blocks/buttons/__container/buttons__container.css);
+@import url(../blocks/buttons/__item/buttons__item.css);
+@import url(../blocks/buttons/__item-grid/buttons__item-grid.css);
+@import url(../blocks/buttons/__item-grid/_disabled/buttons__item-grid_disabled.css);
+@import url(../blocks/buttons/__item-nogrid/buttons__item-nogrid.css);
+/* CSS FOR MAIN-CONENT-GRID */
+@import url(../blocks/main-content-grid/main-content-grid.css);
+@import url(../blocks/main-content-grid/__image-grid/main-content__image-grid.css);
+/* CSS FOR MAIN-CONTENT-NOGRID */
+@import url(../blocks/main-content-nogrid/main-content-nogrid.css);
+@import url(../blocks/main-content-nogrid/__container-nogrid/main-content__container-nogrid.css);
+@import url(../blocks/main-content-nogrid/__image-nogrid/main-content__image-nogrid.css);
+@import url(../blocks/main-content-nogrid/__text-container/main-content__text-container.css);
+@import url(../blocks/main-content-nogrid/__text-span/main-content__text-span.css);
+@import url(../blocks/main-content-nogrid/__text/main-content__text.css);
+@import url(../blocks/main-content-nogrid/display/_none/display__none.css);
+/* CSS FOR POPUP */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_active/popup_acitve.css);
+@import url(../blocks/popup/__overlay/popup__overlay.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__button-span/popup__button-span.css);
+
+
+.popup__container_image{
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, .5);
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media screen and (max-width: 900px) {
+  .popup__container_image{
+    background-color: rgba(0, 0, 0, .8);
+  }
+}
+.popup__image-scale{
+  max-width: 75vw;
+  max-height: 75vh;
+  z-index: 5;
+}
+@media screen and (max-width: 900px) {
+  .popup__image-scale{
+    max-width: 65vw;
+    max-height: 65vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .popup__image-scale{
+    max-width: 55vw;
+    max-height: 55vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .popup__image-scale{
+    max-width: 45vw;
+    max-height: 45vh;
+  }
+}
+.popup__container-text{
+  margin: 0;
+  padding-top: 22px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  min-width: 392px;
+  min-height: 138px;
+}
+@media screen and (max-width: 900px) {
+  .popup__container-text{
+    padding-top: 10px;
+    min-width: 322px;
+    min-height: 108px;
+  }
+}
+.popup__image-text{
+  margin: 0;
+  margin-top: 9px;
+  margin-left: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+@media screen and (max-width: 900px) {
+  .popup__image-text{
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+.popup__image-text__text-span{
+  font-weight: 300;
+}
+.display_none{
+  display: none;
+}
+
+.header__input{
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  width: 1502px;
+  height: 47px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 30px;
+  outline: none;
+}
+.profile__text-container{
+  margin: 0 auto;
+  margin-top: 116px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  max-width: 884px;
+  min-height: 98px;
+}
+.profile__text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.profile__text_span{
+  font-weight: 700;
+}

@@ -1,0 +1,12 @@
+.header__container{
+  margin: 0 auto;
+  background-color: black;
+  z-index: -1;
+  min-height: 264px;
+  border-bottom: 1px solid #00C2FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 32px;
+}
