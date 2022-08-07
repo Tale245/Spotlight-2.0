@@ -1,3 +1,4 @@
+import ChangeGrid from "./changeOnNonGrid.js";
 // Popup's
 const popupAddPhoto = document.querySelector('.popup_add-item');
 const popupOpenImage = document.querySelector('.popup_open-image');
@@ -26,6 +27,25 @@ const imageInPopupImage = document.querySelector('.popup__image-scale');
 const popupImageModel = document.querySelector('.image-model');
 const popupImageDevice = document.querySelector('.image-device');
 const popupImageDescription = document.querySelector('.image-description');
+const pageLoading = document.querySelector('.page-loading')
+
+window.onload = () => {
+  setTimeout(() => {
+    pageLoading.classList.add('display_none')
+  }, 500)
+
+  if(window >= '700'){
+    popupOpenImage.className = '';
+    btnChangeOnGrid.disabled = true;
+    const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
+
+    changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
+  
+    changeGrid.classRemove()
+  }
+}
+
+
 
 // object with images
 const objectWithImages = [
@@ -109,7 +129,9 @@ const addImage = (model, link, device, description) => {
     popupImageDevice.textContent = device;
     popupImageDescription.textContent = description;
 
+
     openPopup(popupOpenImage)
+    
   })
 
   return templateElement
@@ -119,6 +141,7 @@ const addImage = (model, link, device, description) => {
 const insertPhoto = (model, link, device, description) => {
   mainContent.prepend(addImage(model, link, device, description))
 }
+
 
 // function add photo 3/4
 const selectAllData = () => {
@@ -130,6 +153,13 @@ const selectAllData = () => {
 
   insertPhoto(model, link, device, description)
 
+  const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
+
+  changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
+
+  changeGrid.classAdd()
+
+  formAddPhoto.reset()
   closePopup(popupAddPhoto)
 }
 // insert images from object
@@ -143,3 +173,24 @@ formAddPhoto.addEventListener('submit', (evt) => {
   selectAllData()
 })
 
+// change menu on No Grid design
+btnChangeOnNonGrid.addEventListener('click', () => {
+
+  const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
+
+  changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
+
+  changeGrid.classRemove()
+
+})
+
+// change menu on Grid design
+btnChangeOnGrid.addEventListener('click', () => {
+
+  const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
+
+  changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
+
+  changeGrid.classAdd()
+
+})

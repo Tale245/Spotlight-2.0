@@ -61,7 +61,6 @@
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
 @import url(../blocks/popup/__button-span/popup__button-span.css);
 
-
 .popup__container_image{
   margin: 0 auto;
   background-color: rgba(0, 0, 0, .5);
@@ -131,9 +130,6 @@
 }
 .popup__image-text__text-span{
   font-weight: 300;
-}
-.display_none{
-  display: none;
 }
 
 .header__input{
@@ -220,4 +216,74 @@
 }
 .profile__text_span{
   font-weight: 700;
+}
+@keyframes loader {
+  0%{
+    border-radius: 0%;
+    border: 1px solid rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+  }
+  50%{
+    border: 1px solid rgb(107, 129, 255);
+    width: 55px;
+    height: 55px;
+  }
+  100%{
+    border: 1px solid rgb(255, 107, 107);
+    transform: rotate(360deg);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+  }
+}
+@keyframes loader-text {
+  0% {
+    color: rgb(255, 107, 107);
+  }
+  50% {
+    color: rgb(107, 129, 255);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+.page-loading{
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  z-index: 10;
+}
+.page-loading__loader{
+  margin: auto;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid rgb(107, 196, 255);
+  border-radius: 100%;
+  z-index: 11;
+  animation: loader 2s infinite alternate ease-in-out;
+}
+.page-loading__title{
+  position: absolute;
+  top: 53vh;
+  left: 0;
+  right: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  animation: loader-text 2s infinite alternate ease-in-out;
 }
