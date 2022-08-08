@@ -1,3 +1,26 @@
+@keyframes change-color {
+  0%{
+    border-bottom: 1px solid #00C2FF;
+  }
+  10%{
+    border-bottom: 1px solid #FF0000;
+  }
+  20%{
+    border-bottom: 1px solid #FAFF00;
+  }
+  40%{
+    border-bottom: 1px solid #00FF19;
+  }
+  60%{
+    border-bottom: 1px solid #00C2FF;
+  }
+  80%{
+    border-bottom: 1px solid #5200FF;
+  }
+  100%{
+    border-bottom: 1px solid #FF00E5;
+  }
+}
 .header__container{
   margin: 0 auto;
   background-color: black;
@@ -9,4 +32,5 @@
   align-items: flex-end;
   box-sizing: border-box;
   padding-bottom: 32px;
+  animation: change-color 60s infinite alternate ease-in-out;
 }
