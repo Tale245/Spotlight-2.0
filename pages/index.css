@@ -266,7 +266,7 @@
   background-color: rgba(0, 0, 0, 1);
   opacity: 1;
   z-index: 10;
-  animation: close-loading 500ms 1 ease-in-out;
+  animation: close-loading 2s 1 ease-in-out;
 }
 .page-loading__loader{
   margin: auto;
