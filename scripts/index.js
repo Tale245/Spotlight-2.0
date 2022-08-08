@@ -28,6 +28,7 @@ const popupImageModel = document.querySelector('.image-model');
 const popupImageDevice = document.querySelector('.image-device');
 const popupImageDescription = document.querySelector('.image-description');
 const pageLoading = document.querySelector('.page-loading');
+const textInPopupImage = popupOpenImage.querySelector('.container-text') 
 
 // Логика работы при и после загрузки сайта
 window.onload = () => {
@@ -50,7 +51,6 @@ window.onload = () => {
   }
 
 }
-
 // object with images
 const objectWithImages = [
   {link: 'https://images.unsplash.com/photo-1606102843809-33d32921f96a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
@@ -180,8 +180,8 @@ formAddPhoto.addEventListener('submit', (evt) => {
 // change menu on No Grid design
 btnChangeOnNonGrid.addEventListener('click', () => {
 
-  popupOpenImage.classList.remove('popup')
-
+  textInPopupImage.classList.add('display_none')
+  
   const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
 
   changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
@@ -193,8 +193,9 @@ btnChangeOnNonGrid.addEventListener('click', () => {
 // change menu on Grid design
 btnChangeOnGrid.addEventListener('click', () => {
 
-  popupOpenImage.classList.add('popup');
-  popupOpenImage.classList.remove('popup_active');
+  textInPopupImage.classList.remove('display_none')
+
+  popupOpenImage.classList.add('container-text');
 
   const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
 
