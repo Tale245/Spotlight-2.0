@@ -27,12 +27,13 @@ const imageInPopupImage = document.querySelector('.popup__image-scale');
 const popupImageModel = document.querySelector('.image-model');
 const popupImageDevice = document.querySelector('.image-device');
 const popupImageDescription = document.querySelector('.image-description');
-const pageLoading = document.querySelector('.page-loading')
+const pageLoading = document.querySelector('.page-loading');
 
+// Логика работы при и после загрузки сайта
 window.onload = () => {
-  
+
   setTimeout(() => {
-    pageLoading.classList.add('display_none');
+    pageLoading.remove()
   }, 500)
 
   if(window.innerWidth < 700) {
@@ -49,8 +50,6 @@ window.onload = () => {
   }
 
 }
-
-
 
 // object with images
 const objectWithImages = [
