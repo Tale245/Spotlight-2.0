@@ -180,6 +180,8 @@ formAddPhoto.addEventListener('submit', (evt) => {
 // change menu on No Grid design
 btnChangeOnNonGrid.addEventListener('click', () => {
 
+  popupOpenImage.classList.remove('popup')
+
   const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
 
   changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
@@ -190,6 +192,9 @@ btnChangeOnNonGrid.addEventListener('click', () => {
 
 // change menu on Grid design
 btnChangeOnGrid.addEventListener('click', () => {
+
+  popupOpenImage.classList.add('popup');
+  popupOpenImage.classList.remove('popup_active');
 
   const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
 
