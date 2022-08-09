@@ -51,6 +51,7 @@ window.onload = () => {
   }
 
 }
+
 // object with images
 const objectWithImages = [
   {link: 'https://images.unsplash.com/photo-1606102843809-33d32921f96a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
