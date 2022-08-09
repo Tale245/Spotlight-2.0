@@ -32,13 +32,15 @@ const textInPopupImage = popupOpenImage.querySelector('.container-text')
 const logo = document.querySelector('.header__logo') 
 
 // Создаем переменную текущего времени
-const date =new Date()
+const date =new Date().toLocaleTimeString().slice(0,-3)
 
 // Выделяем из нее только часы и минуты
-const fullHours = `${date.getHours()}:${date.getMinutes()}`
+// const fullHours = `${date.getHours()}:${date.getMinutes()}`
+
+console.log(date)
 
 // Действия при наступлении ночи и утра
-if(fullHours >= '0:00' && fullHours < '5:00'){
+if(date >= '00:00' && date < '05:00'){
   logo.src = '././images/SPOTLIGHT-night.png'
 }
 // Логика работы при и после загрузки сайта
