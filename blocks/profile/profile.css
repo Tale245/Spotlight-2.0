@@ -1,7 +1,8 @@
 .profile{
   margin: 0 auto;
-  background-image: url(../../images/backProfile.svg);
+  background-image: url(../../images/background-profile.png);
   background-size: cover;
+  background-position: 0px;
   padding-top: 164px;
   padding-bottom: 121px;
 }

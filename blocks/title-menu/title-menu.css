@@ -1,9 +1,10 @@
 .title-menu{
   margin: 0 auto;
-  background-image: url(https://images.unsplash.com/photo-1530103043960-ef38714abb15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+  background-color: rgb(0, 0, 0);
+  /* background-image: url(https://images.unsplash.com/photo-1608447714925-599deeb5a682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80); */
   background-size: cover;
   background-position: 0px;
-  filter: grayscale(50%);
+  /* filter: grayscale(50%); */
   background-repeat: no-repeat;
   box-sizing: border-box;
   padding-top: 13px;
@@ -11,5 +12,5 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 194, 255, 1);
-  border-top: 1px solid rgba(0, 194, 255, 1);
+  /* border-top: 1px solid rgba(0, 194, 255, 1); */
 }
