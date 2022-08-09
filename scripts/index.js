@@ -29,13 +29,25 @@ const popupImageDevice = document.querySelector('.image-device');
 const popupImageDescription = document.querySelector('.image-description');
 const pageLoading = document.querySelector('.page-loading');
 const textInPopupImage = popupOpenImage.querySelector('.container-text') 
+const logo = document.querySelector('.header__logo') 
 
+// Создаем переменную текущего времени
+const date =new Date()
+
+// Выделяем из нее только часы и минуты
+const fullHours = `${date.getHours()}:${date.getMinutes()}`
+
+// Действия при наступлении ночи и утра
+if(fullHours >= '0:00' && fullHours < '5:00'){
+  logo.src = '././images/SPOTLIGHT-night.png'
+}
 // Логика работы при и после загрузки сайта
 window.onload = () => {
 
   setTimeout(() => {
     pageLoading.remove()
   }, 500)
+
 
   if(window.innerWidth < 700) {
 
