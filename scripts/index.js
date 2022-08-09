@@ -48,7 +48,7 @@ window.onload = () => {
 
   setTimeout(() => {
     pageLoading.remove()
-  }, 500)
+  }, 700)
 
 
   if(window.innerWidth < 700) {

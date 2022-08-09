@@ -1,0 +1,30 @@
+@keyframes loader-text {
+  0% {
+    color: rgb(117, 207, 140);
+  }
+  50% {
+    color: rgb(252, 72, 72);
+  }
+  100% {
+    color: rgb(255, 244, 194);
+  }
+}
+
+.page-loading__title{
+  margin: auto;
+  position: absolute;
+  max-width: 200px;
+  top: 60vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  animation: loader-text 2s infinite alternate ease-in-out;
+  z-index: 12;
+}

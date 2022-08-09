@@ -1,0 +1,36 @@
+.header__input{
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  max-width: 1502px;
+  min-height: 47px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 30px;
+  outline: none;
+}
+@media screen and (max-width: 1500px) {
+  .header__input{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__input{
+    min-height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header__input{
+    min-height: 30px;
+  }
+}

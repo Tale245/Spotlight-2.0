@@ -1,0 +1,38 @@
+@keyframes loader {
+  0%{
+    border-radius: 0%;
+    border: 1px solid rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+  }
+  50%{
+    border: 1px solid rgb(107, 129, 255);
+    width: 55px;
+    height: 55px;
+  }
+  100%{
+    border: 1px solid rgb(255, 107, 107);
+    transform: rotate(360deg);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+.page-loading__loader{
+  margin: auto;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* border: 1px solid rgb(107, 196, 255); */
+  /* border-radius: 100%; */
+  z-index: 11;
+  background-image: url(../../../images/loading-dog.gif);
+  background-size: contain;
+  /* animation: loader 2s infinite alternate ease-in-out; */
+}
