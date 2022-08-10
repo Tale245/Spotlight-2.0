@@ -107,7 +107,8 @@ window.onload = () => {
     popupOpenImage.remove()
 
     btnChangeOnGrid.disabled = true;
-    btnChangeOnGrid.style.opacity = 0.7;
+    btnChangeOnNonGrid.style.opacity = 0.7;
+    btnChangeOnGrid.style.opacity = 1;
     const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
     
     changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
@@ -229,7 +230,7 @@ const selectAllData = () => {
   changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
 
   changeGrid.classAdd()
-  
+
   changeGrid.changeOpacity(btnChangeOnGrid, btnChangeOnNonGrid)
 
   formAddPhoto.reset()
