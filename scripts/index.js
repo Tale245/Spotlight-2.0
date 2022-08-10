@@ -102,18 +102,11 @@ window.onload = () => {
   btnOpenImages.style.opacity = 0.7;
   btnChangeOnGrid.style.opacity = 0.7;
 
-  if(window.innerWidth < 700) {
+  if(window.innerWidth < 900) {
 
-    // popupOpenImage.remove()
-
-    // btnChangeOnGrid.disabled = true;
-    // btnChangeOnNonGrid.style.opacity = 0.7;
-    // btnChangeOnGrid.style.opacity = 1;
-    // const changeGrid = new ChangeGrid('.main-content-grid', '.main-content__container-grid', '.main-content__image-grid', '.main-content__text-container')
-    
-    // changeGrid.changeClass('main-content-nogrid', 'main-content__container-nogrid', 'main-content__image-nogrid')
-      
-    // changeGrid.classRemove()
+    imageInPopupImage.addEventListener('click', () => {
+      closePopup(popupOpenImage)
+    })
   }
 
 }
