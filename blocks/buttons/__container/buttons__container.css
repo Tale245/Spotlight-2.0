@@ -6,4 +6,6 @@
   column-gap: 14px;
   align-items: center;
   margin-bottom: 25px;
+  transition: opacity 200ms ease-in-out;
+  opacity: 1;
 }

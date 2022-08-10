@@ -37,6 +37,7 @@ const videoContent = document.querySelector('.video-content');
 const videoElement = document.querySelector('.video-container__video');
 const videoText = document.querySelector('.video-content__text');
 const upLink = document.querySelector('.up-link');
+const btnContainer = document.querySelector('.buttons__container');
 
 btnUp.addEventListener('dblclick', () => {
     upLink.href= "#title-menu"
@@ -60,8 +61,7 @@ btnOpenVideo.addEventListener('click', () => {
   mainContent.classList.add('display_none')
   btnOpenImages.style.opacity = 1
   btnOpenVideo.style.opacity = 0.7
-  btnChangeOnGrid.style.opacity = 0;
-  btnChangeOnNonGrid.style.opacity = 0;
+  btnContainer.style.opacity = 0;
   btnOpenImages.disabled = false;
 })
 btnOpenImages.addEventListener('click', () => {
@@ -72,14 +72,7 @@ btnOpenImages.addEventListener('click', () => {
   btnOpenVideo.style.opacity = 1
   btnOpenImages.disabled = true;
   videoElement.load()
-  btnChangeOnGrid.style.opacity = 0.7;
-  btnChangeOnNonGrid.style.opacity = 1;
-
-  const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
-
-  changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
-
-  changeGrid.classAdd()
+  btnContainer.style.opacity = 1;
 
 })
 
@@ -236,6 +229,8 @@ const selectAllData = () => {
   changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
 
   changeGrid.classAdd()
+  
+  changeGrid.changeOpacity(btnChangeOnGrid, btnChangeOnNonGrid)
 
   formAddPhoto.reset()
   closePopup(popupAddPhoto)

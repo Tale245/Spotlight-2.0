@@ -19,6 +19,11 @@ export default class ChangeGrid {
     })
   }
 
+  changeOpacity(btnMinus, btnPlus){
+    btnMinus.style.opacity = 0.7
+    btnPlus.style.opacity = 1
+  }
+
   classAdd(){
     this.selectorFour.forEach((item) => {
       item.classList.add('display_none')
