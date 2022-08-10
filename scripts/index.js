@@ -7,6 +7,9 @@ const popupOpenImage = document.querySelector('.popup_open-image');
 const btnAddPhoto = document.querySelector('.title-menu__button-add');
 const btnChangeOnGrid = document.querySelector('.buttons__item-grid');
 const btnChangeOnNonGrid = document.querySelector('.buttons__item-nogrid');
+const btnOpenVideo = document.querySelector('.title-menu__button-video');
+const btnOpenImages = document.querySelector('.title-menu__button-photo');
+const btnUp = document.querySelector('.buttons__item-up');
 
 // Overlay
 const overlayPopupAddPhoto = document.querySelector('.popup__overlay');
@@ -30,6 +33,58 @@ const popupImageDescription = document.querySelector('.image-description');
 const pageLoading = document.querySelector('.page-loading');
 const textInPopupImage = popupOpenImage.querySelector('.container-text') 
 const logo = document.querySelector('.header__logo') 
+const videoContent = document.querySelector('.video-content');
+const videoElement = document.querySelector('.video-container__video');
+const videoText = document.querySelector('.video-content__text');
+const upLink = document.querySelector('.up-link');
+
+btnUp.addEventListener('dblclick', () => {
+    upLink.href= "#title-menu"
+})
+btnUp.addEventListener('contextmenu', () => {
+  upLink.href= "#header";
+})
+
+
+videoElement.addEventListener('mouseover', () => {
+    videoText.classList.add('opacity');
+})
+videoElement.addEventListener('mouseout', () => {
+  setTimeout(() => {
+    videoText.classList.remove('opacity');
+  }, 10000)
+})
+
+btnOpenVideo.addEventListener('click', () => {
+  videoContent.classList.remove('display_none');
+  mainContent.classList.add('display_none')
+  btnOpenImages.style.opacity = 1
+  btnOpenVideo.style.opacity = 0.7
+  btnChangeOnGrid.style.opacity = 0;
+  btnChangeOnNonGrid.style.opacity = 0;
+  btnOpenImages.disabled = false;
+})
+btnOpenImages.addEventListener('click', () => {
+  videoContent.classList.add('display_none');
+  mainContent.classList.remove('display_none');
+  videoText.classList.remove('opacity');
+  btnOpenImages.style.opacity = 0.7;
+  btnOpenVideo.style.opacity = 1
+  btnOpenImages.disabled = true;
+  videoElement.load()
+  btnChangeOnGrid.style.opacity = 0.7;
+  btnChangeOnNonGrid.style.opacity = 1;
+
+  const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
+
+  changeGrid.changeClass('main-content-grid', 'main-content__container-grid', 'main-content__image-grid');
+
+  changeGrid.classAdd()
+
+})
+
+// videoElement.onmouseout = videoText.classList.remove('display_flex');
+
 
 // Создаем переменную текущего времени
 const date =new Date().toLocaleTimeString().slice(0,-3)
@@ -50,6 +105,9 @@ window.onload = () => {
     pageLoading.remove()
   }, 700)
 
+  btnOpenImages.disabled = true;
+  btnOpenImages.style.opacity = 0.7;
+  btnChangeOnGrid.style.opacity = 0.7;
 
   if(window.innerWidth < 700) {
 
@@ -127,6 +185,7 @@ const addImage = (model, link, device, description) => {
   const templateElement = document.querySelector('#template').content.querySelector('.main-content__container-grid').cloneNode(true);
   const templateImage = templateElement.querySelector('.main-content__image-grid')
 
+  templateImage.loading = "lazy"
   templateImage.alt = model;
   templateImage.src = link;
 
@@ -203,6 +262,9 @@ btnChangeOnNonGrid.addEventListener('click', () => {
 
   changeGrid.classRemove()
 
+  btnChangeOnNonGrid.style.opacity = 0.7;
+  btnChangeOnGrid.style.opacity = 1;
+
 })
 
 // change menu on Grid design
@@ -218,4 +280,6 @@ btnChangeOnGrid.addEventListener('click', () => {
 
   changeGrid.classAdd()
 
+  btnChangeOnNonGrid.style.opacity = 1;
+  btnChangeOnGrid.style.opacity = 0.7;
 })
