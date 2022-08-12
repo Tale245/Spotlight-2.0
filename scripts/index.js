@@ -24,6 +24,16 @@ const popupAddPhotoInputModel = document.querySelector('.input-model');
 const popupAddPhotoInputDevice = document.querySelector('.input-device');
 const popupAddPhotoInputDescription = document.querySelector('.input-description');
 
+// Images in profile
+const firstImage = document.querySelector('.first_image')
+const secondImage = document.querySelector('.profile__img-name')
+const thirdImage = document.querySelector('.third_image')
+
+// Container-images in profile
+const firstContainer = document.querySelector('.first__container')
+const secondContainer = document.querySelector('.second__container')
+const thirdContainer = document.querySelector('.third__container')
+
 // Other dom-elements
 const mainContent = document.querySelector('.main-content-grid');
 const imageInPopupImage = document.querySelector('.popup__image-scale');
@@ -76,14 +86,10 @@ btnOpenImages.addEventListener('click', () => {
 
 })
 
-// videoElement.onmouseout = videoText.classList.remove('display_flex');
 
 
 // Создаем переменную текущего времени
 const date =new Date().toLocaleTimeString().slice(0,-3)
-
-// Выделяем из нее только часы и минуты
-// const fullHours = `${date.getHours()}:${date.getMinutes()}`
 
 console.log(date)
 
@@ -106,7 +112,13 @@ window.onload = () => {
 
     imageInPopupImage.addEventListener('click', () => {
       closePopup(popupOpenImage)
+    
     })
+  }
+  
+  if(window.innerWidth < 600) {
+    firstContainer.classList.add('display_none');
+    thirdContainer.classList.add('display_none');
   }
 
 }
