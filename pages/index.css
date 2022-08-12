@@ -222,9 +222,9 @@
   background-size: cover;
   z-index: 100;
 }
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   .buttons__item-up{
     background-color: #000;
     border-radius: 100%;
   }
-}
+} */

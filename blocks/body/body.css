@@ -1,9 +1,9 @@
 .body{
   margin: 0;
   background-color:rgba(17, 17, 17, 1);
-  background-image: url(../../images/NG-G_back.svg);
-  background-size: contain;
-  background-position: 0px -20vh;
+  background-image: url(../../images/NG-G_back-COLOR.svg);
+  background-size: cover;
+  background-position: 0px;
 }
 *::-webkit-scrollbar {
   width: 10px;
