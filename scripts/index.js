@@ -27,12 +27,15 @@ const popupAddPhotoInputDescription = document.querySelector('.input-description
 // Images in profile
 const firstImage = document.querySelector('.first_image')
 const secondImage = document.querySelector('.profile__img-name')
-const thirdImage = document.querySelector('.third_image')
+const thirdImage = document.querySelector('.third_image');
+const profileImage = document.querySelector('.profile__img');
+
 
 // Container-images in profile
-const firstContainer = document.querySelector('.first__container')
-const secondContainer = document.querySelector('.second__container')
-const thirdContainer = document.querySelector('.third__container')
+const firstContainer = document.querySelector('.first__container');
+const secondContainer = document.querySelector('.second__container');
+const thirdContainer = document.querySelector('.third__container');
+
 
 // Other dom-elements
 const mainContent = document.querySelector('.main-content-grid');
@@ -109,19 +112,34 @@ window.onload = () => {
   btnChangeOnGrid.style.opacity = 0.7;
 
   if(window.innerWidth < 900) {
-
     imageInPopupImage.addEventListener('click', () => {
       closePopup(popupOpenImage)
-    
     })
   }
-  
+
   if(window.innerWidth < 600) {
+    
     firstContainer.classList.add('display_none');
     thirdContainer.classList.add('display_none');
+    
+    secondContainer.addEventListener('click' , () => {
+      secondContainer.classList.toggle('display_none');
+      firstContainer.classList.toggle('display_none');
+    })
+    firstContainer.addEventListener('click' , () => {
+      thirdContainer.classList.toggle('display_none');
+      firstContainer.classList.toggle('display_none');
+    })
+    thirdContainer.addEventListener('click' , () => {
+      thirdContainer.classList.toggle('display_none');
+      secondContainer.classList.toggle('display_none');
+    })
   }
 
+
 }
+
+
 
 // object with images
 const objectWithImages = [
