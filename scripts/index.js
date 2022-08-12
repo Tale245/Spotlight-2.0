@@ -100,6 +100,13 @@ console.log(date)
 if(date >= '00:00' && date < '05:00'){
   logo.src = '././images/SPOTLIGHT-night.png'
 }
+
+const changePhoto = (first, second, third) => {
+  first.addEventListener('click' , () => {
+    second.classList.toggle('display_none');
+    third.classList.toggle('display_none');
+  })
+}
 // Логика работы при и после загрузки сайта
 window.onload = () => {
 
@@ -117,23 +124,14 @@ window.onload = () => {
     })
   }
 
-  if(window.innerWidth < 600) {
-    
+  if(window.innerWidth < 651) {
+
     firstContainer.classList.add('display_none');
     thirdContainer.classList.add('display_none');
-    
-    secondContainer.addEventListener('click' , () => {
-      secondContainer.classList.toggle('display_none');
-      firstContainer.classList.toggle('display_none');
-    })
-    firstContainer.addEventListener('click' , () => {
-      thirdContainer.classList.toggle('display_none');
-      firstContainer.classList.toggle('display_none');
-    })
-    thirdContainer.addEventListener('click' , () => {
-      thirdContainer.classList.toggle('display_none');
-      secondContainer.classList.toggle('display_none');
-    })
+
+    changePhoto(secondContainer, secondContainer, firstContainer)
+    changePhoto(firstContainer, firstContainer, thirdContainer)
+    changePhoto(thirdContainer, thirdContainer, secondContainer)
   }
 
 
