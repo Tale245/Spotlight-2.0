@@ -5,13 +5,13 @@
   background-size: cover;
   background-position: 0px;
 }
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
-*::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: rgb(48, 48, 48);
 }
-*::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   border: 1px solid rgb(75, 75, 75)
