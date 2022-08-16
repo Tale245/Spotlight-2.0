@@ -2,6 +2,7 @@ import ChangeGrid from "./changeOnNonGrid.js";
 // Popup's
 const popupAddPhoto = document.querySelector('.popup_add-item');
 const popupOpenImage = document.querySelector('.popup_open-image');
+const popupSetting = document.querySelector('.popup_setting');
 
 // Buttons
 const btnAddPhoto = document.querySelector('.title-menu__button-add');
@@ -10,10 +11,12 @@ const btnChangeOnNonGrid = document.querySelector('.buttons__item-nogrid');
 const btnOpenVideo = document.querySelector('.title-menu__button-video');
 const btnOpenImages = document.querySelector('.title-menu__button-photo');
 const btnUp = document.querySelector('.buttons__item-up');
+const btnSetting = document.querySelector('.setting');
 
 // Overlay
 const overlayPopupAddPhoto = document.querySelector('.popup__overlay');
 const overlayPopupOpenImage = document.querySelector('.popup__overlay_img');
+const overlayPopupSetting = document.querySelector('.popup__overlay_setting');
 
 // Forms
 const formAddPhoto = document.querySelector('.popup__form_add-Image')
@@ -97,9 +100,9 @@ const date =new Date().toLocaleTimeString().slice(0,-3)
 console.log(date)
 
 // Действия при наступлении ночи и утра
-if(date >= '00:00' && date < '05:00'){
-  logo.src = '././images/SPOTLIGHT-night.png'
-}
+// if(date >= '00:00' && date < '05:00'){
+//   logo.src = '././images/SPOTLIGHT-night.png'
+// }
 
 const changePhoto = (first, second, third) => {
   first.addEventListener('click' , () => {
@@ -186,6 +189,9 @@ const closePopup = (popup) => {
 btnAddPhoto.addEventListener('click', () => {
   openPopup(popupAddPhoto)
 })
+btnSetting.addEventListener('click', () => {
+  openPopup(popupSetting)
+})
 
 // overlay on popup's
 overlayPopupAddPhoto.addEventListener('click', () => {
@@ -193,6 +199,9 @@ overlayPopupAddPhoto.addEventListener('click', () => {
 })
 overlayPopupOpenImage.addEventListener('click', () => {
   closePopup(popupOpenImage)
+})
+overlayPopupSetting.addEventListener('click', () => {
+  closePopup(popupSetting)
 })
 
 // function add photo 1/4 –––––––––– START

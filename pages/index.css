@@ -86,3 +86,135 @@
 .display_none{
   display: none;
 }
+.popup_setting{
+  position: absolute;
+  top: 50vh;
+}
+.popup__overlay_setting{
+  position: fixed;
+}
+.popup__container_setting{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 1276px;
+  min-height: 1400px;
+}
+.popup__menu{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  background-color: #0D0D0D;
+}
+.popup__menu-item{
+  width: 206px;
+  height: 105px;
+  background-color: #2E2E2E;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+/* .popup__menu-item:hover{
+  transition: background-color 200ms ease-in-out;
+  background-color: #555555;
+} */
+.popup__info-container{
+  margin: 0 auto;
+  align-self: flex-start;
+}
+.popup__title_setting{
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 100px;
+}
+.popup-setting_input{
+  margin: 0 auto;
+  margin-left: 10px;
+  width: 100px;
+  height: 17px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 14px;
+}
+.popup-setting__paragraph{
+  color: black;
+  background: none;
+}
+.popup-setting__image{
+  width: 306px;
+  height: 400px;
+  background-color: #555555;
+  margin-bottom: 30px;
+}
+.popup-setting__input-container{
+  display: flex;
+}
+.popup-setting_paragraph{
+  margin: auto;
+}
+.popup-setting__paragraph-color{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;  
+  color: #000000;
+}
+.popup-setting_input-text{
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  width: 924px;
+  height: 122px;
+  border: none;
+  background-color: black;
+  outline: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.popup-setting__container{
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 2.4vw;
+}
+.popup-setting_color-text{
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+}
+.popup-setting_input-background{
+  margin: 0;
+  align-self: center;
+  margin-right: 20px;
+}
+.popup-setting__submit-button{
+  margin: 0 auto;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-setting__bt-main-menu{
+  opacity: .3;
+  cursor: no-drop;
+}

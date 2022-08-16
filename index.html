@@ -26,7 +26,7 @@
       </div>
       <div class="header__container-link">
         <a href='#' class="header__link">Навигация</a>
-        <a href='#' class="header__link">Настройки</a>
+        <a href='#' class="header__link setting">Настройки</a>
       </div>
     </div>
   </header>
@@ -53,10 +53,12 @@
         <a href="#" class="profile__paragraph link">Telegram<span class="profile__span"></span></a>
       </div>
     </div>
-    
+
     <div class="profile__text-container">
-      <p class="profile__text"><span class='profile__text_span'>О себе: </span>Привет, меня зовут Амелия! Я – Фотограф! Надеюсь вам понравятся мои работы!
-        Что бы еще вам рассказать?) Иногда люблю снимать видео, общительная, экстраверт. Если вас заинтересуют мои работы, обращайтесь в личные сообщения! Выше указаны мои контакты. </p>
+      <p class="profile__text"><span class='profile__text_span'>О себе: </span>Привет, меня зовут Амелия! Я – Фотограф!
+        Надеюсь вам понравятся мои работы!
+        Что бы еще вам рассказать?) Иногда люблю снимать видео, общительная, экстраверт. Если вас заинтересуют мои
+        работы, обращайтесь в личные сообщения! Выше указаны мои контакты. </p>
     </div>
   </section>
 
@@ -78,7 +80,8 @@
       <button class="buttons__item buttons__item-grid button"></button>
       <button class="buttons__item buttons__item-nogrid button"></button>
     </div>
-    <a href="#title-menu" oncontextmenu="return false" class="up-link"><button class="buttons__item buttons__item-up button"></button></a>
+    <a href="#title-menu" oncontextmenu="return false" class="up-link"><button
+        class="buttons__item buttons__item-up button"></button></a>
   </section>
 
   <section class="main-content-grid" id="main-content__container">
@@ -86,13 +89,16 @@
 
   <section class="video-content display_none">
     <div class="video-container">
-      <video class="video-container__video" poster="https://images.unsplash.com/photo-1560456737-c050f27b7cf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" loading="lazy" alt="Видео" controls>
+      <video class="video-container__video"
+        poster="https://images.unsplash.com/photo-1560456737-c050f27b7cf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+        loading="lazy" alt="Видео" controls>
       </video>
       <div class="video-content__text">
         <p class="video-content__text-element"> <span class="video-content__text_span">Место: </span>Парковка</p>
-        <p class="video-content__text-element"><span class="video-content__text_span">Оборудование: </span>Canon 600d</p>
+        <p class="video-content__text-element"><span class="video-content__text_span">Оборудование: </span>Canon 600d
+        </p>
         <p class="video-content__text-element"> <span class="video-content__text_span">Описание: </span>Пацаны</p>
-        </div>
+      </div>
     </div>
   </section>
 
@@ -126,6 +132,67 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="popup popup_setting ">
+    <div class="popup__overlay popup__overlay_setting"></div>
+    <div class="popup__container popup__container_setting">
+      <div class="popup__menu">
+        <button class="popup__menu-item open">Профиль</button>
+        <button class="popup__menu-item popup-setting__bt-main-menu">Главное меню</button>
+      </div>
+      <div class="popup__info-container">
+        <p class="popup__title popup__title_setting">Настройки профиля</p>
+        <form class="popup-setting__form">
+          <div class="profile__container popup-setting_profile-container">
+            <div class="profile__card-container popup-setting__card-container">
+              <p class="profile__paragraph popup-setting__paragraph">Профессия:<input
+                  class="popup-setting_input input__prof" placeholder="Ввод" required></p>
+              <div class="popup-setting__image popup-setting_first-image"></div>
+              <div class="popup-setting__input-container">
+                <input class="popup-setting_input input_CN" placeholder="Соц. Сеть" required>
+                <p class="popup-setting_paragraph">–</p>
+                <input class="popup-setting_input input_url" placeholder="Ссылка" required>
+              </div>
+            </div>
+            <div class="profile__card-container popup-setting__card-container">
+              <p class="profile__paragraph popup-setting__paragraph">Имя:<input class="popup-setting_input input__prof"
+                  placeholder="Ввод" required></p>
+              <div class="popup-setting__image popup-setting_first-image"></div>
+              <div class="popup-setting__input-container">
+                <input class="popup-setting_input input_CN" placeholder="Соц. Сеть" required>
+                <p class="popup-setting_paragraph">–</p>
+                <input type="url" class="popup-setting_input input_url" placeholder="Ссылка" required>
+              </div>
+            </div>
+            <div class="profile__card-container popup-setting__card-container">
+              <p class="profile__paragraph popup-setting__paragraph">Опыт работы:<input
+                  type="number"  min="0" class="popup-setting_input input__prof" placeholder="Ввод"></p>
+              <div class="popup-setting__image popup-setting_first-image"></div>
+              <div class="popup-setting__input-container">
+                <input class="popup-setting_input input_CN" placeholder="Соц. Сеть" required>
+                <p class="popup-setting_paragraph">–</p>
+                <input type="url" class="popup-setting_input input_url" placeholder="Ссылка" required>
+              </div>
+            </div>
+          </div>
+          <textarea type="text" class="popup-setting_input-text"
+            placeholder="Здесь вы можете рассказать о себе." minlength="20" required></textarea>
+          <div class="popup-setting__container">
+            <input type="color" value="" class="popup-setting_color-text">
+            <p class="popup-setting__paragraph-color">Цвет фона “О себе” и слов – Нажмите на круг, чтобы выбрать новый
+              цвет.</p>
+          </div>
+          <div class="popup-setting__container">
+            <input type="url" value="" class="popup-setting_input popup-setting_input-background" placeholder="Ссылка">
+            <p class="popup-setting__paragraph-color">Здесь вы можете изменить фон профиля.</p>
+          </div>
+          <button type="submit" class="popup__submit-button popup-setting__submit-button"><span
+              class="popup__button-span">Сохранить</span> </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   </div>
   <template id="template">
     <div class="main-content__container-grid">
