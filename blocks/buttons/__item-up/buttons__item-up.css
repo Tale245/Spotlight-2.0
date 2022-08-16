@@ -1,0 +1,9 @@
+.buttons__item-up{
+  position: fixed;
+  bottom: 5vh;
+  right: 3vw;
+  background-image: url(../../../images/up-ico.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}

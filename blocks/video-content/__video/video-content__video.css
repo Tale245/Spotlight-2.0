@@ -1,0 +1,33 @@
+.video-container__video{
+  margin: 0;
+  max-width: 645px;
+  min-height: 300px;
+}
+@media screen and (max-width: 1100px) {
+  .video-container__video{
+    max-width: 500px;
+    min-height: 115px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-container__video{
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .video-container__video{
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .video-container__video{
+    max-width: 320px;
+    min-height: 105px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .video-container__video{
+    max-width: 280px;
+    min-height: 90px;
+  }
+}

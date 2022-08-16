@@ -42,6 +42,7 @@
 @import url(../blocks/buttons/__item-grid/buttons__item-grid.css);
 @import url(../blocks/buttons/__item-grid/_disabled/buttons__item-grid_disabled.css);
 @import url(../blocks/buttons/__item-nogrid/buttons__item-nogrid.css);
+@import url(../blocks/buttons/__item-up/buttons__item-up.css);
 /* CSS FOR MAIN-CONENT-GRID */
 @import url(../blocks/main-content-grid/main-content-grid.css);
 @import url(../blocks/main-content-grid/__image-grid/main-content__image-grid.css);
@@ -71,140 +72,12 @@
 @import url(../blocks/page-loading/page-loading.css);
 @import url(../blocks/page-loading/__loader/page-loading__loader.css);
 @import url(../blocks/page-loading/__title/page-loading__title.css);
-
-.video-content{
-  margin: 0 auto;
-  padding-top: 5vh;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 1100px) {
-  .video-content{
-    padding-top: 0vh;
-    margin-top: -5vh;
-  }
-}
-.video-container{
-  margin: 0 auto;
-  margin-bottom: 70px;
-}
-.video-container__video{
-  margin: 0;
-  max-width: 645px;
-  min-height: 300px;
-}
-@media screen and (max-width: 1100px) {
-  .video-container__video{
-    max-width: 500px;
-    min-height: 115px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .video-container__video{
-    max-width: 450px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .video-container__video{
-    max-width: 370px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .video-container__video{
-    max-width: 320px;
-    min-height: 105px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .video-container__video{
-    max-width: 280px;
-    min-height: 90px;
-  }
-}
-.video-content__text{
-  margin: 0 ;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  max-width: 645px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transition: opacity 200ms ease-in-out;
-  opacity: 0;
-  background-color: whitesmoke;
-}
-@media screen and (max-width: 1100px) {
-  .video-content__text{
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .video-content__text{
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 768px) {
-  .video-content__text{
-    max-width: 450px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .video-content__text{
-    max-width: 370px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .video-content__text{
-    max-width: 320px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .video-content__text{
-    max-width: 280px;
-  }
-}
-.video-content__text-element{
-  margin: 0;
-  margin-top: 15px;
-  margin-left: 15px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000
-}
-@media screen and (max-width: 1100px) {
-  .video-content__text-element{
-    font-size: 23px;
-    line-height: 25px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .video-content__text-element{
-    font-size: 17px;
-    line-height: 22px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .video-content__text-element{
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .video-content__text-element{
-    font-size: 12px;
-    line-height: 19px;
-  }
-}
-.video-content__text_span{
-  font-weight: 500;
-}
+/* CSS FOR VIDEO-CONTENT */
+@import url(../blocks/video-content/video-content.css);
+@import url(../blocks/video-content/video-container/video-container.css);
+@import url(../blocks/video-content/__video/video-content__video.css);
+@import url(../blocks/video-content/__text/video-content__text.css);
+@import url(../blocks/video-content/__text-element/video-content__text-element.css);
 
 .opacity{
   transition: opacity 200ms ease-in-out;
@@ -213,18 +86,3 @@
 .display_none{
   display: none;
 }
-.buttons__item-up{
-  position: fixed;
-  bottom: 5vh;
-  right: 3vw;
-  background-image: url(../images/up-ico.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 100;
-}
-/* @media screen and (max-width: 600px){
-  .buttons__item-up{
-    background-color: #000;
-    border-radius: 100%;
-  }
-} */
