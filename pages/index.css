@@ -88,7 +88,7 @@
 }
 .popup_setting{
   position: absolute;
-  top: 50vh;
+  top: 65vh;
 }
 .popup__overlay_setting{
   position: fixed;
@@ -120,10 +120,7 @@
   line-height: 28px;
   color: #FFFFFF;
 }
-/* .popup__menu-item:hover{
-  transition: background-color 200ms ease-in-out;
-  background-color: #555555;
-} */
+
 .popup__info-container{
   margin: 0 auto;
   align-self: flex-start;
@@ -152,9 +149,12 @@
   background: none;
 }
 .popup-setting__image{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   width: 306px;
   height: 400px;
-  background-color: #555555;
+  background-color: #202020;
   margin-bottom: 30px;
 }
 .popup-setting__input-container{
@@ -217,4 +217,23 @@
 .popup-setting__bt-main-menu{
   opacity: .3;
   cursor: no-drop;
+}
+.popup-setting__input-image{
+  margin: 0 auto;
+  display: flex;
+  max-width: 200px;
+  max-height: 20px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color:rgba(255, 255, 255, 0.7)
+}
+.background{
+  background-color: #000000;
 }

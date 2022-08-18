@@ -1,7 +1,7 @@
 .profile__text{
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
@@ -19,5 +19,5 @@
   }
 }
 .profile__text_span{
-  font-weight: 700;
+  font-weight: 300;
 }

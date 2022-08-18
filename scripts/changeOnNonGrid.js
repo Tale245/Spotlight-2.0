@@ -1,20 +1,20 @@
 export default class ChangeGrid {
   constructor(selectorOne, selectorTwo, selectorThree, selectorFour){
-    this.selectorOne = document.querySelectorAll(selectorOne)
-    this.selectorTwo = document.querySelectorAll(selectorTwo)
-    this.selectorThree = document.querySelectorAll(selectorThree)
-    this.selectorFour = document.querySelectorAll(selectorFour)
+    this._selectorOne = document.querySelectorAll(selectorOne)
+    this._selectorTwo = document.querySelectorAll(selectorTwo)
+    this._selectorThree = document.querySelectorAll(selectorThree)
+    this._selectorFour = document.querySelectorAll(selectorFour)
   }
   
   changeClass(newOneClass, newTwoClass, newThreeClass){
 
-    this.selectorOne.forEach((item) => {
+    this._selectorOne.forEach((item) => {
       item.className = newOneClass
     })
-    this.selectorTwo.forEach((item) => {
+    this._selectorTwo.forEach((item) => {
       item.className = newTwoClass
     })
-    this.selectorThree.forEach((item) => {
+    this._selectorThree.forEach((item) => {
       item.className = newThreeClass
     })
   }
@@ -25,13 +25,13 @@ export default class ChangeGrid {
   }
 
   classAdd(){
-    this.selectorFour.forEach((item) => {
+    this._selectorFour.forEach((item) => {
       item.classList.add('display_none')
     })
   }
 
   classRemove(){
-    this.selectorFour.forEach((item) => {
+    this._selectorFour.forEach((item) => {
       item.classList.remove('display_none')
     })
   }
