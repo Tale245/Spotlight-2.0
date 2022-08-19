@@ -4,105 +4,144 @@ export default class ChangePorifleInfo {
      inputNamelinkThird, inputlinkFirst, inputlinkSecond, inputlinkThird,
       profileTextAbout, inputTextAbout, inputBackColorText, backColorText,
        profile, inputChangeBackground, firstProfileImage, secondProfileImage,
-        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, form}){
+        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, popupProfileFirstImage, popupProfileSecondImage, popupProfileThirdImage, form}){
     // Находим селекторы информации в профиле
-    this.profileProf = document.querySelector(prof)
-    this.profileName = document.querySelector(name)
-    this.profileWorkYears = document.querySelector(workYears)
+    this._profileProf = document.querySelector(prof)
+    this._profileName = document.querySelector(name)
+    this._profileWorkYears = document.querySelector(workYears)
     // Находим селекторы ссылок в профиле
-    this.linkFirst = document.querySelector(linkFirst)
-    this.linkSecond = document.querySelector(linkSecond)
-    this.linkThird = document.querySelector(linkThird)
+    this._linkFirst = document.querySelector(linkFirst)
+    this._linkSecond = document.querySelector(linkSecond)
+    this._linkThird = document.querySelector(linkThird)
     // Находим инпуты информации для профиля в попапе настроек
-    this.inputProf = document.querySelector(inputProf)
-    this.inputName = document.querySelector(inputName)
-    this.inputWorkYears = document.querySelector(inputWorkYears)
+    this._inputProf = document.querySelector(inputProf)
+    this._inputName = document.querySelector(inputName)
+    this._inputWorkYears = document.querySelector(inputWorkYears)
     // Находим инпуты имени ссылок для профиля в попапе
-    this.inputNameLinkFirst = document.querySelector(inputNamelinkFirst)
-    this.inputNameLinkSecond = document.querySelector(inputNamelinkSecond)
-    this.inputNameLinkThids = document.querySelector(inputNamelinkThird)
+    this._inputNameLinkFirst = document.querySelector(inputNamelinkFirst)
+    this._inputNameLinkSecond = document.querySelector(inputNamelinkSecond)
+    this._inputNameLinkThids = document.querySelector(inputNamelinkThird)
     // Находим инпуты ссылок для профиля в попапе
-    this.inputLinkFirst = document.querySelector(inputlinkFirst)
-    this.inputLinkSecond = document.querySelector(inputlinkSecond)
-    this.inputLinkThids = document.querySelector(inputlinkThird)
+    this._inputLinkFirst = document.querySelector(inputlinkFirst)
+    this._inputLinkSecond = document.querySelector(inputlinkSecond)
+    this._inputLinkThids = document.querySelector(inputlinkThird)
     // Находим селектор ИНФОРМАЦИИ "О СЕБЕ"
-    this.profileTextAbout = document.querySelector(profileTextAbout)
+    this._profileTextAbout = document.querySelector(profileTextAbout)
     // Находим инпут ИНФОРМАЦИИ "О СЕБЕ"
-    this.inputTextAbout = document.querySelector(inputTextAbout)
+    this._inputTextAbout = document.querySelector(inputTextAbout)
     // Находим селектор бэкграунда цвета слов сайта и "О себе"
-    this.backgroundColorText = document.querySelectorAll(backColorText)
+    this._backgroundColorText = document.querySelectorAll(backColorText)
+    this._backgroundColorText1 = document.querySelector(backColorText)
     // Находим инпут смены бэкграунд цвета слов и "О себе"
-    this.inputBackgroundColorText = document.querySelector(inputBackColorText)
+    this._inputBackgroundColorText = document.querySelector(inputBackColorText)
     // Находим селектор профиля
-    this.profile = document.querySelector(profile)
+    this._profile = document.querySelector(profile)
     // Находим инпут смены фона профиля
-    this.inputChangeBackground = document.querySelector(inputChangeBackground)
-    // Находим инпут смены фона профиля
-    this.inputChangeBackground = document.querySelector(inputChangeBackground)
+    this._inputChangeBackground = document.querySelector(inputChangeBackground)
     // Находим фото профиля
-    this.firstProfileImage = document.querySelector(firstProfileImage)
-    this.secondProfileImage = document.querySelector(secondProfileImage)
-    this.thirdProfileImage= document.querySelector(thirdProfileImage)
+    this._firstProfileImage = document.querySelector(firstProfileImage)
+    this._secondProfileImage = document.querySelector(secondProfileImage)
+    this._thirdProfileImage= document.querySelector(thirdProfileImage)
+    // Находим фото профиля в попапе
+    this._popupProfileFirstImage = document.querySelector(popupProfileFirstImage)
+    this._popupProfileSecondImage = document.querySelector(popupProfileSecondImage)
+    this._popupProfileThirdImage = document.querySelector(popupProfileThirdImage)
     // Находим инпуты для смены фото профиля
-    this.inputFirstImage = document.querySelector(inputFirstImage)
-    this.inputSecondImage = document.querySelector(inputSecondImage)
-    this.inputThirdImage = document.querySelector(inputThirdImage)
+    this._inputFirstImage = document.querySelector(inputFirstImage)
+    this._inputSecondImage = document.querySelector(inputSecondImage)
+    this._inputThirdImage = document.querySelector(inputThirdImage)
     // Кнопка сабмита
-    this.form = document.querySelector(form)
+    this._form = document.querySelector(form)
   }
 
   // Меняем данные профиля
-  changeProfileInfo(){
-    this.profileProf.textContent = this.inputProf.value;
-    this.profileName.textContent = this.inputName.value;
-    this.profileWorkYears.textContent = this.inputWorkYears.value;
+  _changeProfileInfo(){
+    this._profileProf.textContent = this._inputProf.value;
+    this._profileName.textContent = this._inputName.value;
+    this._profileWorkYears.textContent = this._inputWorkYears.value;
   }
 
   // Меняем фото профиля
-  changeProfileImage(){
-    this.firstProfileImage.src = this.inputFirstImage.value
-    this.secondProfileImage.src = this.inputSecondImage.value
-    this.thirdProfileImage.src = this.inputThirdImage.value
+  _changeProfileImage(){
+    this._firstProfileImage.src = this._inputFirstImage.value
+    this._secondProfileImage.src = this._inputSecondImage.value
+    this._thirdProfileImage.src = this._inputThirdImage.value
   }
 
   // Меняем названия и url ссылок
-  changeUrlAndName(){
-    this.linkFirst.textContent = this.inputNameLinkFirst.value;
-    this.linkSecond.textContent = this.inputNameLinkSecond.value;
-    this.linkThird.textContent = this.inputNameLinkThids.value;
+  _changeUrlAndName(){
+    this._linkFirst.textContent = this._inputNameLinkFirst.value;
+    this._linkSecond.textContent = this._inputNameLinkSecond.value;
+    this._linkThird.textContent = this._inputNameLinkThids.value;
 
-    this.linkFirst.href = this.inputLinkFirst.value;
-    this.linkSecond.href = this.inputLinkSecond.value;
-    this.linkThird.href = this.inputLinkThids.value;
+    this._linkFirst.href = this._inputLinkFirst.value;
+    this._linkSecond.href = this._inputLinkSecond.value;
+    this._linkThird.href = this._inputLinkThids.value;
   }
 
   // Меняем информацию "О себе"
-  changeInfoAbout(){
-    this.profileTextAbout.textContent = this.inputTextAbout.value
+  _changeInfoAbout(){
+    this._profileTextAbout.textContent = this._inputTextAbout.value
   }
 
   // Меняем задний фон слоав и "О себе"
-  changeColor(){
-  this.backgroundColorText.forEach((item) => {
-    item.style.backgroundColor = this.inputBackgroundColorText.value
+  _changeColor(){
+  this._backgroundColorText.forEach((item) => {
+    this._colorValue = this._inputBackgroundColorText.value
+    item.style.backgroundColor = this._colorValue
+    return this._colorValue
   })
+
   }
   
   // Меняем задний фон профиля
-  changeBackroundImage(){
-    this.profile.style.backgroundImage = `url(${this.inputChangeBackground.value})`
+  _changeBackroundImage(){
+    this._url = this._inputChangeBackground.value;
+    this._profile.style.backgroundImage = `url(${this._url})`
+    return this._url
   }
   
+  pasteInfo(){
+    this._inputProf.value = this._profileProf.textContent;
+    this._inputName.value = this._profileName.textContent;
+    this._inputWorkYears.value = this._profileWorkYears.textContent;
+
+    this._inputFirstImage.value = this._firstProfileImage.src;
+    this._inputSecondImage.value = this._secondProfileImage.src;
+    this._inputThirdImage.value = this._thirdProfileImage.src;
+
+    this._popupProfileFirstImage.style.backgroundImage = `url(${this._firstProfileImage.src})`;
+    this._popupProfileSecondImage.style.backgroundImage = `url(${this._secondProfileImage.src})`;
+    this._popupProfileThirdImage.style.backgroundImage = `url(${this._thirdProfileImage.src})`;
+
+    this._inputNameLinkFirst.value = this._linkFirst.textContent;
+    this._inputNameLinkSecond.value = this._linkSecond.textContent;
+    this._inputNameLinkThids.value = this._linkThird.textContent;
+
+    this._inputLinkFirst.value = this._linkFirst.href ;
+    this._inputLinkSecond.value = this._linkSecond.href;
+    this._inputLinkThids.value = this._linkSecond.href;
+
+    this._inputTextAbout.value = this._profileTextAbout.textContent; 
+
+    this._inputBackgroundColorText.value = this._colorValue
+
+    
+    this._inputChangeBackground.value = this._url
+
+
+  }
   // Подтверждение всех изменений
   submit(){
-    this.form.addEventListener('submit', (evt) => {
+    this._form.addEventListener('submit', (evt) => {
       evt.preventDefault()
-      this.changeProfileInfo()
-      this.changeUrlAndName()
-      this.changeInfoAbout()
-      this.changeColor()
-      this.changeBackroundImage()
-      this.changeProfileImage()
+      this._changeProfileInfo()
+      this._changeUrlAndName()
+      this._changeInfoAbout()
+      this._changeColor()
+      this._changeBackroundImage()
+      this._changeProfileImage()
+      this._form.reset()
     })
   }
 }

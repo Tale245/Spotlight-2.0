@@ -4,11 +4,11 @@ export default class Popup {
   }
 
   open(){
-    this.popup.classList.add('popup_active')
+    this._popup.classList.add('popup_active')
   }
 
   close(){
-    this.popup.classList.remove('popup_active')
+    this._popup.classList.remove('popup_active')
   }
 
   // setEventListeners(){

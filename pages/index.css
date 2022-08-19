@@ -83,9 +83,6 @@
   transition: opacity 200ms ease-in-out;
   opacity: 1;
 }
-.display_none{
-  display: none;
-}
 .popup_setting{
   position: absolute;
   top: 65vh;
@@ -151,11 +148,14 @@
 .popup-setting__image{
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  width: 306px;
-  height: 400px;
-  background-color: #202020;
+  align-items: flex-start;
+  width: 286px;
+  height: 380px;
+  background-image: #202020;
   margin-bottom: 30px;
+  background-size: cover;
+  object-fit: cover;
+  border: 10px solid black;
 }
 .popup-setting__input-container{
   display: flex;
@@ -204,6 +204,7 @@
 }
 .popup-setting_input-background{
   margin: 0;
+  width: 250px;
   align-self: center;
   margin-right: 20px;
 }
@@ -220,6 +221,7 @@
 }
 .popup-setting__input-image{
   margin: 0 auto;
+  margin-top: 10px;
   display: flex;
   max-width: 200px;
   max-height: 20px;
@@ -227,13 +229,18 @@
   background: none;
   border: none;
   border-bottom: 1px solid black;
+  border-radius: 2px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color:rgba(255, 255, 255, 0.7)
+  color:rgb(194, 194, 194);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .background{
   background-color: #000000;
+}
+.display_none{
+  display: none;
 }

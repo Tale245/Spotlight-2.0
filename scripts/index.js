@@ -9,7 +9,6 @@ import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription,
   pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer} from './contants.js';
 
-// change info and style in profile
 const changeProfileInfo = new ChangePorifleInfo({
   prof: '.profile__span_prof',
   name: '.profile__name',
@@ -38,22 +37,28 @@ const changeProfileInfo = new ChangePorifleInfo({
   inputFirstImage: '.inputFirstImage',
   inputSecondImage: '.inputSecondImage',
   inputThirdImage: '.inputThirdImage',
+  popupProfileFirstImage: '.popup-setting_first-image',
+  popupProfileSecondImage: '.popup-setting_second-image',
+  popupProfileThirdImage: '.popup-setting_third-image',
   form: '.popup-setting__form',
 })
+
 changeProfileInfo.submit()
 
-
+// при двойном нажатии на кнопку ВВЕРХ ссылка меняется
 btnUp.addEventListener('dblclick', () => {
-    upLink.href= "#title-menu"
+  upLink.href= "#title-menu"
 })
+// при правом нажатии на кнопку ВВЕРХ ссылка меняется
 btnUp.addEventListener('contextmenu', () => {
   upLink.href= "#header";
 })
 
-
+// при наведении на видео, появлятеся описание
 videoElement.addEventListener('mouseover', () => {
     videoText.classList.add('opacity');
 })
+// при наведении на видео, пропадает описание
 videoElement.addEventListener('mouseout', () => {
   setTimeout(() => {
     videoText.classList.remove('opacity');
@@ -178,6 +183,7 @@ btnAddPhoto.addEventListener('click', () => {
   openPopup(popupAddPhoto)
 })
 btnSetting.addEventListener('click', () => {
+  changeProfileInfo.pasteInfo()
   openPopup(popupSetting)
 })
 
@@ -285,8 +291,6 @@ btnChangeOnNonGrid.addEventListener('click', () => {
 btnChangeOnGrid.addEventListener('click', () => {
 
   textInPopupImage.classList.remove('display_none')
-
-  popupOpenImage.classList.add('container-text');
 
   const changeGrid = new ChangeGrid('.main-content-nogrid', '.main-content__container-nogrid', '.main-content__image-nogrid', '.main-content__text-container')
 

@@ -47,6 +47,8 @@ const videoText = document.querySelector('.video-content__text');
 const upLink = document.querySelector('.up-link');
 const btnContainer = document.querySelector('.buttons__container');
 
-export {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGrid, btnChangeOnNonGrid, btnOpenVideo, btnOpenImages, btnUp, btnSetting, overlayPopupAddPhoto, overlayPopupOpenImage, overlayPopupSetting,
-  formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice, popupAddPhotoInputDescription, firstContainer, secondContainer, thirdContainer,
-  mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription, pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer} 
+export {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGrid, btnChangeOnNonGrid, btnOpenVideo,
+   btnOpenImages, btnUp, btnSetting, overlayPopupAddPhoto, overlayPopupOpenImage, overlayPopupSetting,
+  formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice, popupAddPhotoInputDescription,firstContainer, secondContainer, thirdContainer,
+  mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription, pageLoading, textInPopupImage,
+  logo, videoContent, videoElement, videoText, upLink, btnContainer}
