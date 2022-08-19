@@ -31,6 +31,11 @@ const firstContainer = document.querySelector('.first__container');
 const secondContainer = document.querySelector('.second__container');
 const thirdContainer = document.querySelector('.third__container');
 
+// Container-images in popup-setting
+const firstPopupSettingContainer = document.querySelector('.popup-setting__card-container_first');
+const secondPopupSettingContainer = document.querySelector('.popup-setting__card-container_second');
+const thirdPopupSettingContainer = document.querySelector('.popup-setting__card-container_third');
+
 
 // Other dom-elements
 const mainContent = document.querySelector('.main-content-grid');
@@ -53,4 +58,4 @@ export {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
    btnOpenImages, btnUp, btnSetting, overlayPopupAddPhoto, overlayPopupOpenImage, overlayPopupSetting,
   formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice, popupAddPhotoInputDescription,firstContainer, secondContainer, thirdContainer,
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription, pageLoading, textInPopupImage,
-  logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName }
+  logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer }

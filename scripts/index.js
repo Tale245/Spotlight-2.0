@@ -6,8 +6,15 @@ import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
   formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice,
   popupAddPhotoInputDescription, firstContainer, secondContainer, thirdContainer,
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription,
-  pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName } from './contants.js';
+  pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer,
+   titleOfMenu, profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer } from './contants.js';
 
+   const changePhoto = (first, second, third) => {
+    first.addEventListener('click' , () => {
+      second.classList.toggle('display_none');
+      third.classList.toggle('display_none');
+    })
+  }
   // Логика работы при и после загрузки сайта
 window.onload = () => {
 
@@ -33,6 +40,18 @@ window.onload = () => {
     changePhoto(secondContainer, secondContainer, firstContainer)
     changePhoto(firstContainer, firstContainer, thirdContainer)
     changePhoto(thirdContainer, thirdContainer, secondContainer)
+
+  }
+
+  if(window.innerWidth < 1100) {
+
+    firstPopupSettingContainer.classList.add('display_none');
+    thirdPopupSettingContainer.classList.add('display_none');
+
+    changePhoto(secondPopupSettingContainer,  secondPopupSettingContainer, firstPopupSettingContainer)
+    changePhoto(firstPopupSettingContainer, firstPopupSettingContainer, thirdPopupSettingContainer)
+    changePhoto(thirdPopupSettingContainer, thirdPopupSettingContainer,  secondPopupSettingContainer)
+
   }
 
 
@@ -130,12 +149,6 @@ console.log(date)
 //   logo.src = '././images/SPOTLIGHT-night.png'
 // }
 
-const changePhoto = (first, second, third) => {
-  first.addEventListener('click' , () => {
-    second.classList.toggle('display_none');
-    third.classList.toggle('display_none');
-  })
-}
 
 
 // object with images

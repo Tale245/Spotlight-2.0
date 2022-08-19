@@ -133,18 +133,18 @@
       </div>
     </div>
   </div>
-  <div class="popup popup_setting">
+  <div class="popup popup_setting popup_active">
     <div class="popup__overlay popup__overlay_setting"></div>
     <div class="popup__container popup__container_setting">
-      <div class="popup__menu display_none">
+      <!-- <div class="popup__menu">
         <button class="popup__menu-item open">Профиль</button>
         <button class="popup__menu-item popup-setting__bt-main-menu">Главное меню</button>
-      </div>
+      </div> -->
       <div class="popup__info-container">
         <p class="popup__title popup__title_setting">Настройки профиля</p>
         <form class="popup-setting__form">
           <div class="profile__container popup-setting_profile-container">
-            <div class="profile__card-container popup-setting__card-container">
+            <div class="profile__card-container popup-setting__card-container popup-setting__card-container_first">
               <p class="profile__paragraph popup-setting__paragraph">Профессия:<input
                   class="popup-setting_input input__prof" placeholder="Ввод" required></p>
               <div class="popup-setting__image popup-setting_first-image"><input type="url" class="popup-setting__input-image inputFirstImage" placeholder="Введите ссылку на фото"> </div>
@@ -154,7 +154,7 @@
                 <input class="popup-setting_input input_url-first" placeholder="Ссылка" required>
               </div>
             </div>
-            <div class="profile__card-container popup-setting__card-container">
+            <div class="profile__card-container popup-setting__card-container popup-setting__card-container_second">
               <p class="profile__paragraph popup-setting__paragraph">Имя:<input class="popup-setting_input input__name"
                   placeholder="Ввод" ></p>
               <div class="popup-setting__image popup-setting_second-image"><input type="url" class="popup-setting__input-image inputSecondImage" placeholder="Введите ссылку на фото"></div>
@@ -164,7 +164,7 @@
                 <input type="url" class="popup-setting_input input_url-second" placeholder="Ссылка" required>
               </div>
             </div>
-            <div class="profile__card-container popup-setting__card-container">
+            <div class="profile__card-container popup-setting__card-container popup-setting__card-container_third">
               <p class="profile__paragraph popup-setting__paragraph">Опыт работы:<input
                   type="number"  min="0" max="99" lenght="2" class="popup-setting_input input__work-years" placeholder="Ввод" required></p>
               <div class="popup-setting__image popup-setting_third-image"><input type="url" class="popup-setting__input-image inputThirdImage" placeholder="Введите ссылку на фото"></div>
