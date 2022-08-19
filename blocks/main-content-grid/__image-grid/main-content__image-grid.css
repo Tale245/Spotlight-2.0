@@ -13,43 +13,97 @@
 
 @media screen and (max-width: 1024px)  {
   .main-content__image-grid{
-    width: 270px;
+    width: 295px;
     height: 350px;
   }
 }
 @media screen and (max-width: 900px)  {
   .main-content__image-grid{
-    width: 250px;
+    width: 265px;
     height: 330px;
   }
 }
-@media screen and (max-width: 780px)  {
+@media screen and (max-width: 803px)  {
   .main-content__image-grid{
-    width: 220px;
-    height: 300px;
+    width: 250px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 755px)  {
+  .main-content__image-grid{
+    width: 240px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 735px)  {
+  .main-content__image-grid{
+    width: 210px;
+    height: 270px;
   }
 }
 @media screen and (max-width: 690px)  {
   .main-content__image-grid{
-    width: 190px;
+    width: 195px;
     height: 270px;
   }
 }
 @media screen and (max-width: 610px)  {
   .main-content__image-grid{
-    width: 150px;
+    width: 175px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 550px)  {
+  .main-content__image-grid{
+    width: 155px;
     height: 200px;
   }
 }
 @media screen and (max-width: 490px)  {
   .main-content__image-grid{
-    width: 120px;
+    width: 130px;
     height: 146px;
   }
 }
-@media screen and (max-width: 380px)  {
+@media screen and (max-width: 400px)  {
+  .main-content__image-grid{
+    width: 125px;
+    height: 146px;
+  }
+}
+@media screen and (max-width: 390px)  {
+  .main-content__image-grid{
+    width: 120px;
+    height: 126px;
+  }
+}
+@media screen and (max-width: 370px)  {
+  .main-content__image-grid{
+    width: 110px;
+    height: 126px;
+  }
+}
+@media screen and (max-width: 340px)  {
   .main-content__image-grid{
     width: 100px;
     height: 126px;
+  }
+}
+@media screen and (max-width: 310px)  {
+  .main-content__image-grid{
+    width: 90px;
+    height: 116px;
+  }
+}
+@media screen and (max-width: 280px)  {
+  .main-content__image-grid{
+    width: 80px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 250px)  {
+  .main-content__image-grid{
+    width: 70px;
+    height: 90px;
   }
 }

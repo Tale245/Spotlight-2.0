@@ -11,6 +11,6 @@
 @media screen and (max-width: 1024px)  {
   .main-content-grid{
   column-gap: 1px;
-  row-gap: 5px;
+  row-gap: 1px;
   }
 }
