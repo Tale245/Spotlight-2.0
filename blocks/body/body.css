@@ -3,7 +3,6 @@
   background-color:rgba(17, 17, 17, 1);
   background-image: url(../../images/NG-G_back-COLOR.svg);
   background-size: cover;
-  background-position: 0px;
 }
 body::-webkit-scrollbar {
   width: 10px;
