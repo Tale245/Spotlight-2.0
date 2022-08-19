@@ -4,10 +4,10 @@ export default class ChangePorifleInfo {
      inputNamelinkThird, inputlinkFirst, inputlinkSecond, inputlinkThird,
       profileTextAbout, inputTextAbout, inputBackColorText, backColorText,
        profile, inputChangeBackground, firstProfileImage, secondProfileImage,
-        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, popupProfileFirstImage, popupProfileSecondImage, popupProfileThirdImage, form}){
+        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, popupProfileFirstImage, popupProfileSecondImage, popupProfileThirdImage, titleOfMenu, form}){
     // Находим селекторы информации в профиле
     this._profileProf = document.querySelector(prof)
-    this._profileName = document.querySelector(name)
+    this._profileName = name
     this._profileWorkYears = document.querySelector(workYears)
     // Находим селекторы ссылок в профиле
     this._linkFirst = document.querySelector(linkFirst)
@@ -37,7 +37,7 @@ export default class ChangePorifleInfo {
     // Находим селектор профиля
     this._profile = document.querySelector(profile)
     // Находим инпут смены фона профиля
-    this._inputChangeBackground = document.querySelector(inputChangeBackground)
+    // this._inputChangeBackground = document.querySelector(inputChangeBackground)
     // Находим фото профиля
     this._firstProfileImage = document.querySelector(firstProfileImage)
     this._secondProfileImage = document.querySelector(secondProfileImage)
@@ -50,6 +50,8 @@ export default class ChangePorifleInfo {
     this._inputFirstImage = document.querySelector(inputFirstImage)
     this._inputSecondImage = document.querySelector(inputSecondImage)
     this._inputThirdImage = document.querySelector(inputThirdImage)
+    // Находим название в titl-menu
+    this._titleOfMenu = titleOfMenu
     // Кнопка сабмита
     this._form = document.querySelector(form)
   }
@@ -95,11 +97,11 @@ export default class ChangePorifleInfo {
   }
   
   // Меняем задний фон профиля
-  _changeBackroundImage(){
-    this._url = this._inputChangeBackground.value;
-    this._profile.style.backgroundImage = `url(${this._url})`
-    return this._url
-  }
+  // _changeBackroundImage(){
+  //   this._url = this._inputChangeBackground.value;
+  //   this._profile.style.backgroundImage = `url(${this._url})`
+  //   return this._url
+  // }
   
   pasteInfo(){
     this._inputProf.value = this._profileProf.textContent;
@@ -127,7 +129,7 @@ export default class ChangePorifleInfo {
     this._inputBackgroundColorText.value = this._colorValue
 
     
-    this._inputChangeBackground.value = this._url
+    // this._inputChangeBackground.value = this._url
 
 
   }
@@ -139,8 +141,10 @@ export default class ChangePorifleInfo {
       this._changeUrlAndName()
       this._changeInfoAbout()
       this._changeColor()
-      this._changeBackroundImage()
+      // this._changeBackroundImage()
       this._changeProfileImage()
+      debugger
+      this._titleOfMenu.textContent = `BY ${this._inputName.value}`
       this._form.reset()
     })
   }

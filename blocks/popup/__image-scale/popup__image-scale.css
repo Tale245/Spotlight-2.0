@@ -10,6 +10,6 @@
 }
 @media screen and (max-width: 1080px) {
   .popup__image-scale{
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }

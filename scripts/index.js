@@ -7,11 +7,13 @@ import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
   formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice,
   popupAddPhotoInputDescription, firstContainer, secondContainer, thirdContainer,
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription,
-  pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer} from './contants.js';
+  pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName } from './contants.js';
+
+  titleOfMenu.textContent = `BY ${profileName.textContent}`
 
 const changeProfileInfo = new ChangePorifleInfo({
   prof: '.profile__span_prof',
-  name: '.profile__name',
+  name: profileName,
   workYears: '.profile__span_work-years',
   inputProf: '.input__prof',
   inputName: '.input__name',
@@ -40,6 +42,7 @@ const changeProfileInfo = new ChangePorifleInfo({
   popupProfileFirstImage: '.popup-setting_first-image',
   popupProfileSecondImage: '.popup-setting_second-image',
   popupProfileThirdImage: '.popup-setting_third-image',
+  titleOfMenu: titleOfMenu,
   form: '.popup-setting__form',
 })
 
@@ -137,36 +140,61 @@ window.onload = () => {
 
 // object with images
 const objectWithImages = [
-  {link: 'https://images.unsplash.com/photo-1606102843809-33d32921f96a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+  {link: 'https://images.unsplash.com/photo-1592214066513-e54258f80608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
   model: "Why not?",
-  device: 'Iphone 11',
+  device: 'SONY, ILCE-7RM3',
   description: 'we are'
 },
-{link: 'https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-model: "Liza",
+{link: 'https://images.unsplash.com/photo-1592214067051-1f30935f304d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80',
+model: "K",
 device: 'SONY, ILCE-7RM3',
-description: 'look at the sky'
+description: '21-405'
 },
-  {link: 'https://images.unsplash.com/photo-1659462247710-11687c527acf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-  model: "My friend",
-  device: 'Iphone 13 PRO MAX',
+  {link: 'https://images.unsplash.com/photo-1584953165389-92aada8fdd22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+  model: "Gilli",
+  device: 'SONY, ILCE-7RM3',
   description: 'Have a nice day :)'
 },
-  {link: 'https://images.unsplash.com/photo-1609568521324-9c1e0cb56edf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-  model: "-",
-  device: 'Canon 750D',
-  description: 'Mood ♡'
-},
-  {link: 'https://images.unsplash.com/photo-1659431320852-b5b947d7ca7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  {link: 'https://images.unsplash.com/photo-1660906864988-fd44913fb3e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
   model: "-",
   device: 'Canon 750D',
   description: '321'
 },
-  {link: 'https://images.unsplash.com/photo-1659366700487-11f79bd1247a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  {link: 'https://images.unsplash.com/photo-1660906864722-d3e8f2ddbea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
   model: "-",
   device: 'Canon 750D',
-  description: 'Good night.'
-}
+  description: 'HI.'
+},
+{link: 'https://images.unsplash.com/photo-1531439211378-796fe4acab3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+model: "-",
+device: 'Canon 750D',
+description: 'F L E A P'
+},
+{link: 'https://images.unsplash.com/photo-1531369201-4f7be267b1de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+model: "-",
+device: 'Canon 750D',
+description: 'Golden hour of a lifetime ♡'
+},
+{link: 'https://images.unsplash.com/photo-1580136084408-5cd83c76fed9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
+model: "-",
+device: 'Canon 750D',
+description: 'Golden'
+},
+{link: 'https://images.unsplash.com/photo-1625360211126-4140bd24d7f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80',
+model: "-",
+device: 'Canon 750D',
+description: 'DUDE'
+},
+{link: 'https://images.unsplash.com/photo-1625360311623-3e127f40a3e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+model: "-",
+device: 'Canon 750D',
+description: '31 - 0 - 45'
+},
+{link: 'https://images.unsplash.com/photo-1660827718505-1070e803962b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+model: "-",
+device: 'Canon 750D',
+description: '31 - 0 - 45'
+},
 ]
 
 
