@@ -1,5 +1,5 @@
 // Import's
-import ChangeGrid from "./ChangeOnNonGrid.js";
+import ChangeGrid from "./ChangeGrid.js";
 import ChangePorifleInfo from "./ChangeProfileInfo.js";
 import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGrid, btnChangeOnNonGrid, btnOpenVideo, btnOpenImages, btnUp,
   btnSetting, overlayPopupAddPhoto, overlayPopupOpenImage, overlayPopupSetting,
