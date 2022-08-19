@@ -9,6 +9,37 @@ import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription,
   pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName } from './contants.js';
 
+  // Логика работы при и после загрузки сайта
+window.onload = () => {
+
+  setTimeout(() => {
+    pageLoading.remove()
+  }, 700)
+
+  btnOpenImages.disabled = true;
+  btnOpenImages.style.opacity = 0.7;
+  btnChangeOnGrid.style.opacity = 0.7;
+
+  if(window.innerWidth < 900) {
+    imageInPopupImage.addEventListener('click', () => {
+      closePopup(popupOpenImage)
+    })
+  }
+
+  if(window.innerWidth < 651) {
+
+    firstContainer.classList.add('display_none');
+    thirdContainer.classList.add('display_none');
+
+    changePhoto(secondContainer, secondContainer, firstContainer)
+    changePhoto(firstContainer, firstContainer, thirdContainer)
+    changePhoto(thirdContainer, thirdContainer, secondContainer)
+  }
+
+
+}
+
+
   titleOfMenu.textContent = `BY ${profileName.textContent}`
 
 const changeProfileInfo = new ChangePorifleInfo({
@@ -106,36 +137,6 @@ const changePhoto = (first, second, third) => {
     third.classList.toggle('display_none');
   })
 }
-// Логика работы при и после загрузки сайта
-window.onload = () => {
-
-  setTimeout(() => {
-    pageLoading.remove()
-  }, 700)
-
-  btnOpenImages.disabled = true;
-  btnOpenImages.style.opacity = 0.7;
-  btnChangeOnGrid.style.opacity = 0.7;
-
-  if(window.innerWidth < 900) {
-    imageInPopupImage.addEventListener('click', () => {
-      closePopup(popupOpenImage)
-    })
-  }
-
-  if(window.innerWidth < 651) {
-
-    firstContainer.classList.add('display_none');
-    thirdContainer.classList.add('display_none');
-
-    changePhoto(secondContainer, secondContainer, firstContainer)
-    changePhoto(firstContainer, firstContainer, thirdContainer)
-    changePhoto(thirdContainer, thirdContainer, secondContainer)
-  }
-
-
-}
-
 
 
 // object with images
