@@ -1,16 +1,61 @@
-<svg width="1903" height="1872" viewBox="0 0 1903 1872" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_214_3)">
-<line x1="0.414568" y1="180.535" x2="1903.41" y2="500.535" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="-0.0472853" y1="138.5" x2="1902.95" y2="102.5" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="0.144268" y1="630.504" x2="1903.14" y2="740.504" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="-0.346084" y1="1274.52" x2="1902.65" y2="1008.52" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="0.414568" y1="180.535" x2="1903.41" y2="500.535" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="0.144268" y1="630.504" x2="1903.14" y2="740.504" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
-<line x1="-0.346084" y1="1274.52" x2="1902.65" y2="1008.52" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<svg width="1903" height="8190" viewBox="0 0 1903 8190" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_354_206)">
+<rect width="1903" height="8190" fill="black"/>
+<line x1="-61.5689" y1="760.537" x2="1903.43" y2="1104.54" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.0472853" y1="268.5" x2="1902.95" y2="232.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="0.144268" y1="760.504" x2="1903.14" y2="870.504" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.346084" y1="1404.52" x2="1902.65" y2="1138.52" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-61.5689" y1="760.537" x2="1903.43" y2="1104.54" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.50292" y1="1649.55" x2="1938.5" y2="2047.55" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.144268" y1="760.504" x2="1903.14" y2="870.504" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-0.346084" y1="1404.52" x2="1902.65" y2="1138.52" stroke="#97EFD5" stroke-width="5"/>
+<path d="M-15.6084 1410.5L1903.39 1714.5" stroke="#FE3434" stroke-width="5"/>
+<line x1="-61.5689" y1="2424.54" x2="1903.43" y2="2768.54" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.0472853" y1="2086.5" x2="1902.95" y2="2050.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="0.144268" y1="2424.5" x2="1903.14" y2="2534.5" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.346084" y1="3068.52" x2="1902.65" y2="2802.52" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-61.5689" y1="2424.54" x2="1903.43" y2="2768.54" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.50292" y1="3313.55" x2="1938.5" y2="3711.55" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.144268" y1="2424.5" x2="1903.14" y2="2534.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-61.5689" y1="6089.54" x2="1903.43" y2="6433.54" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="0.144268" y1="6089.5" x2="1903.14" y2="6199.5" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.346084" y1="6733.52" x2="1902.65" y2="6467.52" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-61.5689" y1="6089.54" x2="1903.43" y2="6433.54" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.50292" y1="6978.55" x2="1938.5" y2="7376.55" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.144268" y1="6089.5" x2="1903.14" y2="6199.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-0.346084" y1="6733.52" x2="1902.65" y2="6467.52" stroke="#97EFD5" stroke-width="5"/>
+<path d="M-15.6084 6739.5L1903.39 7043.5" stroke="#FE3434" stroke-width="5"/>
+<line x1="-61.5689" y1="7753.54" x2="1903.43" y2="8097.54" stroke="black" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-0.0472853" y1="7415.5" x2="1902.95" y2="7379.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="0.144268" y1="7753.5" x2="1903.14" y2="7863.5" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<line x1="-61.5689" y1="7753.54" x2="1903.43" y2="8097.54" stroke="#FE3434" stroke-width="5"/>
+<line x1="0.144268" y1="7753.5" x2="1903.14" y2="7863.5" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-0.346084" y1="3068.52" x2="1902.65" y2="2802.52" stroke="#97EFD5" stroke-width="5"/>
+<path d="M-15.6084 3074.5L1903.39 3378.5" stroke="#FE3434" stroke-width="5"/>
+<g clip-path="url(#clip1_354_206)">
+<rect width="1903" height="1139" transform="translate(0 3811)" fill="black"/>
+<line x1="0.414568" y1="3808.53" x2="1903.41" y2="4128.53" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-61.5689" y1="4258.54" x2="1903.43" y2="4602.54" stroke="#97EFD5" stroke-width="5"/>
+<line x1="0.144268" y1="4258.5" x2="1903.14" y2="4368.5" stroke="#FE3434" stroke-width="5"/>
+<line x1="-0.346084" y1="4902.52" x2="1902.65" y2="4636.52" stroke="#FE3434" stroke-width="5"/>
+</g>
+<g clip-path="url(#clip2_354_206)">
+<rect width="1903" height="1139" transform="translate(0 4953)" fill="black"/>
+<line x1="0.414568" y1="4950.53" x2="1903.41" y2="5270.53" stroke="#97EFD5" stroke-width="5"/>
+<line x1="-61.5689" y1="5400.54" x2="1903.43" y2="5744.54" stroke="#97EFD5" stroke-width="5"/>
+<line x1="0.144268" y1="5400.5" x2="1903.14" y2="5510.5" stroke="#FE3434" stroke-width="5"/>
+<line x1="-0.346084" y1="6044.52" x2="1902.65" y2="5778.52" stroke="#FE3434" stroke-width="5"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_214_3">
-<rect width="1903" height="1872" fill="white"/>
+<clipPath id="clip0_354_206">
+<rect width="1903" height="8190" fill="white"/>
+</clipPath>
+<clipPath id="clip1_354_206">
+<rect width="1903" height="1139" fill="white" transform="translate(0 3811)"/>
+</clipPath>
+<clipPath id="clip2_354_206">
+<rect width="1903" height="1139" fill="white" transform="translate(0 4953)"/>
 </clipPath>
 </defs>
 </svg>
