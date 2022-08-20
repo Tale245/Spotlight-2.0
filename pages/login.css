@@ -1,0 +1,143 @@
+.body{
+  margin: 0;
+  background: url(https://images.unsplash.com/photo-1614102073832-030967418971?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  overflow: hidden;
+}
+.login{
+  margin: 0 auto;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 220px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1000px)  {
+  .login{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px)  {
+  .login{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px)  {
+  .login{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px)  {
+  .login{
+    width: 280px;
+  }
+}
+@media screen and (max-width: 300px)  {
+  .login{
+    width: 230px;
+  }
+}
+.login__title{
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: #000;
+}
+@media screen and (max-width: 700px)  {
+  .login__title{
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+.login__form{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.login__input{
+  margin: 0;
+  margin-top: 40px;
+  width: 250px;
+  height: 30px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media screen and (max-width: 400px) {
+  .login__input{
+    width: 210px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .login__input{
+    width: 190px;
+    height: 30px;
+  }
+}
+.header__container-login{
+  min-height: 150px;
+}
+.login__paragraph{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .login__paragraph{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.login__span{
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+.login__span:hover{
+  transition: color 200ms ease-in-out, border-bottom 200ms ease-in-out;
+  color: rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(56, 56, 56);
+}
+.display_none{
+  display: none;
+}
+.login__button{
+  margin-top: 50px;
+}
+@media screen and (max-width: 1100px) {
+  .login__button{
+    width: 250px
+  }
+}
+@media screen and (max-width: 400px) {
+  .login__button{
+    width: 220px
+  }
+}
+@media screen and (max-width: 300px) {
+  .login__button{
+    width: 190px
+  }
+}
+

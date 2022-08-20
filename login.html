@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login in perfect room</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./pages/login.css">
+</head>
+<body class="body">
+  <!-- <div class="page-loading">
+    <p class="page-loading__title">Идет загрузка...</p>
+    <div class="page-loading__loader"></div>
+  </div> -->
+  <section class="signIn login">
+    <h1 class="login__title">Вход</h1>
+    <form class="login__form">
+      <input class="login__input" placeholder="Логин" required>
+      <input class="login__input" type="password" placeholder="Пароль" required>
+      <button type="submit" class="popup__submit-button popup-setting__submit-button login__button"><span
+        class="popup__button-span">Войти</span> </button>
+    </form>
+    <p class="login__paragraph">
+      Нет аккаунта?<span href="#" class="login__span"> Зарегистрироваться.</span>
+    </p>
+  </section>
+  <section class="signUp login display_none">
+    <h1 class="login__title">Регистрация</h1>
+    <form class="login__form">
+      <input class="login__input" type="login" placeholder="Логин">
+      <input class="login__input" type="password" autocomplete="off" placeholder="Пароль" required>
+      <input class="login__input" type="password" autocomplete="off" placeholder="Повторите пароль" required>
+      <input class="login__input" type="email" autocomplete="off" placeholder="Введите эл.почту" required>
+      <button type="submit" class="popup__submit-button popup-setting__submit-button login__button"><span
+        class="popup__button-span">Зарегистрироваться</span> </button>
+    </form>
+    <p class="login__paragraph">
+      Есть аккаунт?<span href="#" class="login__span"> Войти.</span>
+    </p>
+  </section>
+  <!-- <script type="module" src="./scripts/index.js"></script> -->
+</body>
+</html>

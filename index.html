@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мои работы</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./pages/popup-setting.css">
 </head>
 
 <body class="body">
@@ -21,8 +22,8 @@
     </form>
     <div class="header__container">
       <div class="header__container-link">
-        <a href="#" class="header__link header__link-first">Вход</a>
-        <a href='#' class="header__link">Профиль</a>
+        <a href="login.html" class="header__link header__link-first">Вход</a>
+        <a href='index.html' class="header__link active">Профиль</a>
       </div>
       <div class="header__container-link">
         <a href='#' class="header__link">Навигация</a>
@@ -35,7 +36,8 @@
 
     <div class="profile__container">
       <div class="profile__card-container first__container">
-        <p class="profile__paragraph background">Профессия: <span class="profile__span profile__span_prof">Фотограф</span></p>
+        <p class="profile__paragraph background">Профессия: <span
+            class="profile__span profile__span_prof">Фотограф</span></p>
         <img class="profile__img first_image"
           src="https://images.unsplash.com/photo-1625360402898-f82bb21dd371?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80">
         <a href="#" class="profile__paragraph link link_first background">VK</a>
@@ -47,7 +49,8 @@
         <a href="#" class="profile__paragraph link link_second background">YOUTUBE</a>
       </div>
       <div class="profile__card-container third__container">
-        <p class="profile__paragraph background">Опыт работы: <span class="profile__span profile__span_work-years">5</span></p>
+        <p class="profile__paragraph background">Опыт работы: <span
+            class="profile__span profile__span_work-years">5</span></p>
         <img class="profile__img third_image"
           src="https://images.unsplash.com/photo-1625339957674-3d65f3748332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80">
         <a href="#" class="profile__paragraph link link_third background">Telegram</a>
@@ -56,9 +59,9 @@
 
     <div class="profile__text-container background">
       <p class="profile__text">О себе: <span class='profile__text_span'>Привет, меня зовут BLAKE! Я – Фотограф!
-        Надеюсь вам понравятся мои работы!
-        Что бы еще вам рассказать?) Иногда люблю снимать видео, общительный). Если вас заинтересуют мои
-        работы, обращайтесь в личные сообщения! Выше указаны мои контакты.</span> </p>
+          Надеюсь вам понравятся мои работы!
+          Что бы еще вам рассказать?) Иногда люблю снимать видео, общительный). Если вас заинтересуют мои
+          работы, обращайтесь в личные сообщения! Выше указаны мои контакты.</span> </p>
     </div>
   </section>
 
@@ -147,7 +150,8 @@
             <div class="profile__card-container popup-setting__card-container popup-setting__card-container_first">
               <p class="profile__paragraph popup-setting__paragraph">Профессия:<input
                   class="popup-setting_input input__prof" placeholder="Ввод" required></p>
-              <div class="popup-setting__image popup-setting_first-image"><input type="url" class="popup-setting__input-image inputFirstImage" placeholder="Введите ссылку на фото"> </div>
+              <div class="popup-setting__image popup-setting_first-image"><input type="url"
+                  class="popup-setting__input-image inputFirstImage" placeholder="Введите ссылку на фото"> </div>
               <div class="popup-setting__input-container">
                 <input class="popup-setting_input input_CN-first" placeholder="Соц. Сеть" required>
                 <p class="popup-setting_paragraph">–</p>
@@ -156,8 +160,9 @@
             </div>
             <div class="profile__card-container popup-setting__card-container popup-setting__card-container_second">
               <p class="profile__paragraph popup-setting__paragraph">Имя:<input class="popup-setting_input input__name"
-                  placeholder="Ввод" ></p>
-              <div class="popup-setting__image popup-setting_second-image"><input type="url" class="popup-setting__input-image inputSecondImage" placeholder="Введите ссылку на фото"></div>
+                  placeholder="Ввод"></p>
+              <div class="popup-setting__image popup-setting_second-image"><input type="url"
+                  class="popup-setting__input-image inputSecondImage" placeholder="Введите ссылку на фото"></div>
               <div class="popup-setting__input-container">
                 <input class="popup-setting_input input_CN-second" placeholder="Соц. Сеть" required>
                 <p class="popup-setting_paragraph">–</p>
@@ -165,9 +170,10 @@
               </div>
             </div>
             <div class="profile__card-container popup-setting__card-container popup-setting__card-container_third">
-              <p class="profile__paragraph popup-setting__paragraph">Опыт работы:<input
-                  type="number"  min="0" max="99" lenght="2" class="popup-setting_input input__work-years" placeholder="Ввод" required></p>
-              <div class="popup-setting__image popup-setting_third-image"><input type="url" class="popup-setting__input-image inputThirdImage" placeholder="Введите ссылку на фото"></div>
+              <p class="profile__paragraph popup-setting__paragraph">Опыт работы:<input type="number" min="0" max="99"
+                inputmode="numeric" maxlength="2" class="popup-setting_input input__work-years" placeholder="Ввод" required></p>
+              <div class="popup-setting__image popup-setting_third-image"><input type="url"
+                  class="popup-setting__input-image inputThirdImage" placeholder="Введите ссылку на фото"></div>
               <div class="popup-setting__input-container">
                 <input class="popup-setting_input input_CN-third" placeholder="Соц. Сеть" required>
                 <p class="popup-setting_paragraph">–</p>
@@ -175,11 +181,12 @@
               </div>
             </div>
           </div>
-          <textarea type="text" class="popup-setting_input-text"
-            placeholder="Здесь вы можете рассказать о себе." minlength="20" required></textarea>
+          <textarea type="text" class="popup-setting_input-text" placeholder="Здесь вы можете рассказать о себе."
+            minlength="20" required></textarea>
           <div class="popup-setting__container">
-            <input type="color"  class="popup-setting_color-text">
-            <p class="popup-setting__paragraph-color">Цвет фона “О себе” и слов – Нажмите на квадрат, чтобы выбрать новый
+            <input type="color" class="popup-setting_color-text">
+            <p class="popup-setting__paragraph-color">Цвет фона “О себе” и слов – Нажмите на квадрат, чтобы выбрать
+              новый
               цвет.</p>
           </div>
           <!-- <div class="popup-setting__container">
@@ -191,8 +198,6 @@
         </form>
       </div>
     </div>
-  </div>
-
   </div>
   <template id="template">
     <div class="main-content__container-grid">
