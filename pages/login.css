@@ -1,8 +1,16 @@
+/* Подключаем шрифты */
+@import url(../vendor/Inter/inter.css);
+/* CSS FOR SUBMIT-BUTTON */
+@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__button-span/popup__button-span.css);
+/* CSS FOR PAGE-LOADING */
+@import url(../blocks/page-loading/page-loading.css);
+@import url(../blocks/page-loading/__loader/page-loading__loader.css);
+@import url(../blocks/page-loading/__title/page-loading__title.css);
 .body{
   margin: 0;
   background: url(https://images.unsplash.com/photo-1614102073832-030967418971?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
   background-size: cover;
-  /* background-repeat: no-repeat; */
   height: 100vh;
   overflow: hidden;
 }
@@ -139,5 +147,9 @@
   .login__button{
     width: 190px
   }
+}
+.popup__button-span{
+  font-weight: 500;
+  font-size: 20px;
 }
 
