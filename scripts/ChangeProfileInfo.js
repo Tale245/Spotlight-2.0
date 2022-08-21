@@ -4,7 +4,7 @@ export default class ChangePorifleInfo {
      inputNamelinkThird, inputlinkFirst, inputlinkSecond, inputlinkThird,
       profileTextAbout, inputTextAbout, inputBackColorText, backColorText,
        profile, inputChangeBackground, firstProfileImage, secondProfileImage,
-        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, popupProfileFirstImage, popupProfileSecondImage, popupProfileThirdImage, titleOfMenu, form}){
+        thirdProfileImage, inputFirstImage, inputSecondImage, inputThirdImage, popupProfileFirstImage, popupProfileSecondImage, popupProfileThirdImage, form}){
     // Находим селекторы информации в профиле
     this._profileProf = document.querySelector(prof)
     this._profileName = name
@@ -50,8 +50,6 @@ export default class ChangePorifleInfo {
     this._inputFirstImage = document.querySelector(inputFirstImage)
     this._inputSecondImage = document.querySelector(inputSecondImage)
     this._inputThirdImage = document.querySelector(inputThirdImage)
-    // Находим название в titl-menu
-    this._titleOfMenu = titleOfMenu
     // Кнопка сабмита
     this._form = document.querySelector(form)
   }
@@ -143,8 +141,6 @@ export default class ChangePorifleInfo {
       this._changeColor()
       // this._changeBackroundImage()
       this._changeProfileImage()
-      debugger
-      this._titleOfMenu.textContent = `BY ${this._inputName.value}`
       this._form.reset()
     })
   }

@@ -1,4 +1,6 @@
 .buttons{
   margin: 0 auto;
   padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }

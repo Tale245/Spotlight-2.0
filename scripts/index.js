@@ -7,7 +7,7 @@ import {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGri
   popupAddPhotoInputDescription, firstContainer, secondContainer, thirdContainer,
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription,
   pageLoading, textInPopupImage, logo, videoContent, videoElement, videoText, upLink, btnContainer,
-   titleOfMenu, profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer } from './contants.js';
+   profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer } from './contants.js';
 
    const changePhoto = (first, second, third) => {
     first.addEventListener('click' , () => {
@@ -57,9 +57,6 @@ window.onload = () => {
 
 }
 
-
-  titleOfMenu.textContent = `BY ${profileName.textContent}`
-
 const changeProfileInfo = new ChangePorifleInfo({
   prof: '.profile__span_prof',
   name: profileName,
@@ -91,7 +88,6 @@ const changeProfileInfo = new ChangePorifleInfo({
   popupProfileFirstImage: '.popup-setting_first-image',
   popupProfileSecondImage: '.popup-setting_second-image',
   popupProfileThirdImage: '.popup-setting_third-image',
-  titleOfMenu: titleOfMenu,
   form: '.popup-setting__form',
 })
 

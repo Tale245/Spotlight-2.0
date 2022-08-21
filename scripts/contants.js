@@ -4,12 +4,12 @@ const popupOpenImage = document.querySelector('.popup_open-image');
 const popupSetting = document.querySelector('.popup_setting');
 
 // Buttons
-const btnAddPhoto = document.querySelector('.title-menu__button-add');
+const btnAddPhoto = document.querySelector('.buttons__button-add');
 const btnChangeOnGrid = document.querySelector('.buttons__item-grid');
 const btnChangeOnNonGrid = document.querySelector('.buttons__item-nogrid');
-const btnOpenVideo = document.querySelector('.title-menu__button-video');
-const btnOpenImages = document.querySelector('.title-menu__button-photo');
-const btnUp = document.querySelector('.buttons__item-up');
+const btnOpenVideo = document.querySelector('.buttons__button-video');
+const btnOpenImages = document.querySelector('.buttons__button-photo');
+const btnUp = document.querySelector('.button__item-up');
 const btnSetting = document.querySelector('.setting');
 
 // Overlay
@@ -51,11 +51,10 @@ const videoElement = document.querySelector('.video-container__video');
 const videoText = document.querySelector('.video-content__text');
 const upLink = document.querySelector('.up-link');
 const btnContainer = document.querySelector('.buttons__container');
-const titleOfMenu = document.querySelector('.title-menu__title');
 const profileName = document.querySelector('.profile__name');
 
 export {popupAddPhoto, popupOpenImage, popupSetting, btnAddPhoto, btnChangeOnGrid, btnChangeOnNonGrid, btnOpenVideo,
    btnOpenImages, btnUp, btnSetting, overlayPopupAddPhoto, overlayPopupOpenImage, overlayPopupSetting,
   formAddPhoto, popupAddPhotoInputLink, popupAddPhotoInputModel, popupAddPhotoInputDevice, popupAddPhotoInputDescription,firstContainer, secondContainer, thirdContainer,
   mainContent, imageInPopupImage, popupImageModel, popupImageDevice, popupImageDescription, pageLoading, textInPopupImage,
-  logo, videoContent, videoElement, videoText, upLink, btnContainer, titleOfMenu, profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer }
+  logo, videoContent, videoElement, videoText, upLink, btnContainer, profileName, firstPopupSettingContainer, secondPopupSettingContainer, thirdPopupSettingContainer }

@@ -11,6 +11,8 @@
 </head>
 
 <body class="body">
+  <a href="#favorite-images" oncontextmenu="return false" class="up-link"><button
+    class="button__item-up button"></button></a>
   <div class="page-loading">
     <p class="page-loading__title">Идет загрузка...</p>
     <div class="page-loading__loader"></div>
@@ -65,26 +67,33 @@
     </div>
   </section>
 
-  <section class="title-menu" id="title-menu">
-    <button class="title-menu__button-add title-menu__button button background"></button>
-    <div class="title-menu__container">
-      <button class="title-menu__button-video title-menu__button button background"></button>
-      <div class="title-menu__title_container">
-        <h1 class="title-menu__title background"></h1>
-        <p class="title-menu__subtitle background">Ниже вы можете ознакомиться с моими работами</p>
-      </div>
-      <button class="title-menu__button-photo title-menu__button button background"></button>
-    </div>
-    <button class="title-menu__button-q title-menu__button button background"></button>
+  <section class="favorite-images" id="favorite-images">
+   <div class="favorite-images__text-container">
+    <h1 class="favorite-images__title">MY FAVORITE</h1>
+    <p class="favorite-images__author">by BLAKE</p>
+   </div>
+   <div class="favorite-images__images-container">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1606870655612-8eacd813984d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1567972308721-4f22e8465feb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1595658648264-28d97330860c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1574595790883-89141138957c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1598962134959-27a16982a4db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1597080261711-a7f6bfa8c240?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80">
+    <img class="favorite-images__image" src="https://images.unsplash.com/photo-1612563394648-63efa1ca8ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80">
+    
+   </div>
+   <p class="favorite-images__paragraph">Искусство есть посредник того, что нельзя высказать. (И. Гете)</p>
   </section>
 
   <section class="buttons">
+    <button class="buttons__button-add title-menu__button button"></button>
+    <button class="buttons__button-video title-menu__button button"></button>
     <div class="buttons__container">
       <button class="buttons__item buttons__item-grid button"></button>
       <button class="buttons__item buttons__item-nogrid button"></button>
     </div>
-    <a href="#title-menu" oncontextmenu="return false" class="up-link"><button
-        class="buttons__item buttons__item-up button"></button></a>
+    <button class="buttons__button-photo title-menu__button button"></button>
+    <button class="buttons__button-q title-menu__button button"></button>
   </section>
 
   <section class="main-content-grid" id="main-content__container">

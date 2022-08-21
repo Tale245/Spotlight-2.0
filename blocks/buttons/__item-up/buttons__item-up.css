@@ -1,9 +1,9 @@
-.buttons__item-up{
+.button__item-up{
   position: fixed;
-  bottom: 5vh;
-  right: 3vw;
+  right: 10px;
+  bottom: 20px;
   background-image: url(../../../images/up-ico.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 2;
+  background-size: contain;
+  z-index: 200;
 }

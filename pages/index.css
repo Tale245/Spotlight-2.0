@@ -24,17 +24,6 @@
 @import url(../blocks/button/button.css);
 /* ОБЩИЙ CSS ДЛЯ ВСЕХ ССЫЛОК */
 @import url(../blocks/link/link.css);
-/* CSS FOR TITLE-MENU */
-@import url(../blocks/title-menu/title-menu.css);
-@import url(../blocks/title-menu/title-menu.css);
-@import url(../blocks/title-menu/__button/title-menu__button.css);
-@import url(../blocks/title-menu/__button-add/title-menu__button-add.css);
-@import url(../blocks/title-menu/__button-video/title-menu__button-video.css);
-@import url(../blocks/title-menu/__button-photo/title-menu__button-photo.css);
-@import url(../blocks/title-menu/__button-q/title-menu__button-q.css);
-@import url(../blocks/title-menu/__container/title-menu__container.css);
-@import url(../blocks/title-menu/__title/title-menu__title.css);
-@import url(../blocks/title-menu/__subtitle/title-menu__subtitle.css);
 /* CSS FOR BUTTONS */
 @import url(../blocks/buttons/buttons.css);
 @import url(../blocks/buttons/__container/buttons__container.css);
@@ -43,6 +32,10 @@
 @import url(../blocks/buttons/__item-grid/_disabled/buttons__item-grid_disabled.css);
 @import url(../blocks/buttons/__item-nogrid/buttons__item-nogrid.css);
 @import url(../blocks/buttons/__item-up/buttons__item-up.css);
+@import url(../blocks/buttons/__button-add/buttons__button-add.css);
+@import url(../blocks/buttons/__button-video/buttons__button-video.css);
+@import url(../blocks/buttons/__button-photo/buttons__button-photo.css);
+@import url(../blocks/buttons/__button-q/buttons__button-q.css);
 /* CSS FOR MAIN-CONENT-GRID */
 @import url(../blocks/main-content-grid/main-content-grid.css);
 @import url(../blocks/main-content-grid/__image-grid/main-content__image-grid.css);
@@ -91,4 +84,67 @@
 }
 .active{
   color: #00C2FF;
+}
+
+.favorite-images{
+  margin: 0 auto;
+  background-color: #000000;
+  border-bottom: 1px solid white;
+}
+.favorite-images__text-container{
+  margin: 0;
+  max-width: 1825px;
+  display: flex;
+  justify-content: space-between;
+}
+.favorite-images__title{
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 70px;
+  color: #FFFFFF;
+  background-color: #FF84F3;
+}
+.favorite-images__author{
+  margin: 0;
+  align-self: flex-end;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.favorite-images__images-container{
+  margin: 0 auto;
+  max-width: 1755px;
+  margin-top: 21px;
+  padding-bottom: 10px;
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.favorite-images__image{
+  margin: 0;
+  margin-right: 19px;
+  width: 231px;
+  height: 287px;
+  object-fit: cover;
+}
+.favorite-images__image:last-of-type{
+  margin-right: 0px;
+}
+.favorite-images__paragraph{
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 21px;
+  text-align: center;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
 }

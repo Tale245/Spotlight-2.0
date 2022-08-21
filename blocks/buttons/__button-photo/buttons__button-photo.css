@@ -1,0 +1,5 @@
+.buttons__button-photo{
+  background-image: url(../../../images/button-photo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
