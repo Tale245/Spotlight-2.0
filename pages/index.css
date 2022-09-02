@@ -97,6 +97,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .favorite-images__title{
   margin: 0;
   font-family: 'Inter';
@@ -107,6 +108,30 @@
   color: #FFFFFF;
   background-color: #FF84F3;
 }
+@media screen and (max-width: 1500px){
+  .favorite-images__title{
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .favorite-images__title{
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+@media screen and (max-width: 650px){
+  .favorite-images__title{
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 450px){
+  .favorite-images__title{
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
 .favorite-images__author{
   margin: 0;
   align-self: flex-end;
@@ -116,6 +141,19 @@
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
+  padding-right: 10px;
+}
+@media screen and (max-width: 650px){
+  .favorite-images__author{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 450px){
+  .favorite-images__author{
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .favorite-images__images-container{
   margin: 0 auto;
@@ -126,12 +164,99 @@
   overflow-x: auto;
   white-space: nowrap;
 }
+@media screen and (max-width: 1500px){
+  .favorite-images__images-container{
+    max-width: 1150px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .favorite-images__images-container{
+    max-width: 950px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .favorite-images__images-container{
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 950px){
+  .favorite-images__images-container{
+    max-width: 760px;
+  }
+}
+@media screen and (max-width: 750px){
+  .favorite-images__images-container{
+    max-width: 590px;
+  }
+}
+@media screen and (max-width: 650px){
+  .favorite-images__images-container{
+    max-width: 520px;
+  }
+}
+@media screen and (max-width: 550px){
+  .favorite-images__images-container{
+    max-width: 420px;
+  }
+}
+@media screen and (max-width: 450px){
+  .favorite-images__images-container{
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 350px){
+  .favorite-images__images-container{
+    max-width: 250px;
+  }
+}
 .favorite-images__image{
   margin: 0;
   margin-right: 19px;
   width: 231px;
   height: 287px;
   object-fit: cover;
+}
+@media screen and (max-width: 1500px){
+  .favorite-images__image{
+    width: 201px;
+    height: 237px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .favorite-images__image{
+    width: 181px;
+    height: 217px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .favorite-images__image{
+    width: 171px;
+    height: 207px;
+  }
+}
+@media screen and (max-width: 750px){
+  .favorite-images__image{
+    width: 131px;
+    height: 167px;
+  }
+}
+@media screen and (max-width: 650px){
+  .favorite-images__image{
+    width: 111px;
+    height: 147px;
+  }
+}
+@media screen and (max-width: 550px){
+  .favorite-images__image{
+    width: 91px;
+    height: 127px;
+  }
+}
+@media screen and (max-width: 450px){
+  .favorite-images__image{
+    width: 71px;
+    height: 107px;
+  }
 }
 .favorite-images__image:last-of-type{
   margin-right: 0px;
@@ -142,9 +267,53 @@
   margin-bottom: 21px;
   text-align: center;
   font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 800px){
+  .favorite-images__paragraph{
+    font-size: 17px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 750px){
+  .favorite-images__paragraph{
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 650px){
+  .favorite-images__paragraph{
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 550px){
+  .favorite-images__paragraph{
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 450px){
+  .favorite-images__paragraph{
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 350px){
+  .favorite-images__paragraph{
+    font-size: 9px;
+    line-height: 12px;
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 300px){
+  .favorite-images__paragraph{
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 14px;
+  }
 }
