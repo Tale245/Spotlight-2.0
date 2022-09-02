@@ -95,7 +95,7 @@ changeProfileInfo.submit()
 
 // при двойном нажатии на кнопку ВВЕРХ ссылка меняется
 btnUp.addEventListener('dblclick', () => {
-  upLink.href= "#title-menu"
+  upLink.href= "#favorite-images"
 })
 // при правом нажатии на кнопку ВВЕРХ ссылка меняется
 btnUp.addEventListener('contextmenu', () => {
